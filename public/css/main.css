@@ -1,10 +1,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 :root {
-  --main-font: 'Roboto', sans-serif;;
+  --main-font: 'Roboto', sans-serif;
   --base-color: #D32212;
+  --base-gray: #EDEDEE;
   --base-color-dark: #111E42;
 }
 
 body {
   font-family: var(--main-font);
+}
+.tiny-title {
+  color: var(--base-color)
+}
+.btn-base {
+  width: 175px;
+  height: 45px;
+  background-color: var(--base-color);
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  border: 0px;
+}
+.btn-base-white {
+  width: 175px;
+  height: 45px;
+  background-color: #fff;
+  color: var(--base-color);
+  font-size: 16px;
+  font-weight: bold;
+  border: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #fff;
 }

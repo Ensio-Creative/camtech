@@ -79,8 +79,8 @@ export default {
 
 @media (min-width: 994px) {
   .header-container {
-    position: fixed;
-    top: 0px;
+    // position: fixed;
+    // top: 0px;
     z-index: 1000;
     width: 100%;
     height: 88px;
@@ -112,7 +112,7 @@ export default {
   text-decoration: none;
   font-size: 13px;
   font-weight: 400;
-  padding: 0px 25px 43px 25px;
+  padding: 0px 20px 43px 20px;
   color: var(--base-color-dark);
 }
 
