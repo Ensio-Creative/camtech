@@ -78,4 +78,13 @@ export default {
     }
   }
 }
+@media (min-width: 1000px) {
+  .footer .nav-footer a {
+    margin-right: 50px;
+  }
+  .footer .privacy .privacy-item {
+    display: inline;
+    padding-right: 20px;
+}
+}
 </style>

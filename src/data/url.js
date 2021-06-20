@@ -13,6 +13,6 @@ export default [
   },
   {
     title: 'CONTACT US',
-    url: '/contact-us'
+    url: '/contact'
   }
 ]

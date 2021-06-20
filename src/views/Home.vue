@@ -1,22 +1,20 @@
 <template>
   <div class="home">
     <div class="bg-hero">
-      <div class="bg-text">
-        <div class="container">
-          <h5>
-            Wireless <strong>SCADA/IoT and automation
-            solutions</strong> for industries.
-          </h5>
-          <p>The oil and gas industry, power sector and
-              government agencies.
-          </p>
-          <button
-            to="/"
-            class="btn-base"
-          >
-            BROWSE SOLUTIONS
-          </button>
-        </div>
+      <div class="bg-text container">
+        <h2>
+          Wireless <strong>SCADA/IoT and automation
+          solutions</strong> for industries.
+        </h2>
+        <p>The oil and gas industry, power sector and
+            government agencies.
+        </p>
+        <button
+          class="btn-base"
+          @click="$router.push('/solutions')"
+        >
+          BROWSE SOLUTIONS
+        </button>
       </div>
     </div>
     <section class="what-we-do">
@@ -34,17 +32,18 @@
           </div>
           <div class="col-12 col-lg-8 card-services">
             <div class="row">
-              <div 
+              <router-link 
                 v-for="serve in services"
-                :key="serve"
+                :key="serve.title"
+                :to="`/services/${serve.id}`"
                 class="col-12 col-md-6 col-lg-4"
               >
                 <div class="card services">
                   <div class="card-body">
-                    <span>{{ serve }}</span>
+                    <span>{{ serve.title }}</span>
                   </div>
                 </div>
-              </div>
+              </router-link>
             </div>
           </div>
         </div>
@@ -82,21 +81,11 @@
 <script>
 import Footer from '../components/common/Footer.vue'
 import Forward from '../components/common/Forward.vue'
+import services from '@/data/services.js'
 export default {
   components: { Footer, Forward },
   name: 'Home',
   setup () {
-    const services = [
-      'Panel Fabrication',
-      'Maintenance and Troubleshooting',
-      'Field Installation',
-      'SCADA Communications Troubleshooting',
-      'Systems and Communication Design',
-      'RTU/EFM Programming and Configuration',
-      'SCADA Hosting',
-      'RF Path Study/Analysis',
-      'SCADALink Airtime Provisioning'
-    ]
       return {
         services
       }
@@ -111,7 +100,7 @@ export default {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 60vh;
+  height: 512px;
 
   .bg-text {
     color: #fff;
@@ -134,21 +123,34 @@ export default {
 
   .card-services {
     margin-top: 20px;
+    a {
+      color: #000;
+    }
   }
   .card {
     border-radius: 0px;
     border: 0px;
   }
+  .card-body{
+    padding: 0px;
+    height: 67px;
+    display: flex;
+    padding: 10px;
+    
+    span {
+      align-self: center;
+    }
+  }
   .services{
     background-color: #fff;
-    border-left: 1px solid var(--base-color);
+    border-left: 2px solid var(--base-color);
     margin-bottom: 10px;
   }
 }
 
 .solutions-first-half{
   color: #fff;
-  background-color: var(--base-color-dark);
+  background-color: var(--base-dark);
   height: 50vh;
   display: flex;
 
@@ -188,6 +190,24 @@ export default {
       margin-top: 20px;
       margin-right: 20px;
     }
+  }
+}
+@media (min-width: 1000px) {
+  .bg-hero {
+    height: 90vh;
+
+    h2 {
+      width: 620px;
+    }
+    p {
+      width: 350px;
+    }
+  }
+  .solutions-first-half {
+    height: 70vh;
+  }
+  .solution-second-half {
+    height: 70vh;
   }
 }
 </style>

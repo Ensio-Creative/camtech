@@ -1,14 +1,24 @@
 <template>
-  <TheHeader />
+  <TheHeader
+      @sidenavToggle="displaySidenav = !displaySidenav"
+    />
+    <TheSidenav
+      :show="displaySidenav"
+      @close="displaySidenav = false"
+    />
   <router-view/>
 </template>
 
 <script>
 import TheHeader from '@/components/navigation/TheHeader'
+import TheSidenav from '@/components/navigation/TheSidenav.vue'
 export default {
-  components: { TheHeader },
+  components: { TheHeader, TheSidenav },
   setup() {
-    return {}
+    const displaySidenav = false
+    return {
+      displaySidenav
+    }
   },
 }
 </script>

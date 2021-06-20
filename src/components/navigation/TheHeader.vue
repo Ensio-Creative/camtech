@@ -3,7 +3,7 @@
     <header class="the-header container">
       <div class="nav-img">
         <router-link to="/">
-          <img src="img/carmel-s-tekno-logo-215x53 1.svg" alt="">
+          <img src="/img/carmel-s-tekno-logo-215x53 1.svg" alt="">
         </router-link>
       </div>
       <TheSideNavToggle @toggle="$emit('sidenavToggle')" />
@@ -32,7 +32,7 @@
 
 <script>
 import TheSideNavToggle from '@/components/navigation/TheSideNavToggle.vue'
-import routes from '@/data/url.js';
+import routes from '@/data/url.js'
 export default {
   name: 'TheHeader',
   components: { TheSideNavToggle },
@@ -75,6 +75,7 @@ export default {
 
 .navigation-items {
   display: none;
+  font-family: var(--nav-font);
 }
 
 @media (min-width: 994px) {
@@ -113,7 +114,7 @@ export default {
   font-size: 13px;
   font-weight: 400;
   padding: 0px 20px 43px 20px;
-  color: var(--base-color-dark);
+  color: var(--base-dark);
 }
 
 .nav-item a:hover,

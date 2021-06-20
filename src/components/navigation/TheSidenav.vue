@@ -32,6 +32,7 @@
 </template>
 
 <script>
+import routes from '@/data/url.js'
 export default {
   name: 'TheSidenav',
   props: {
@@ -40,22 +41,17 @@ export default {
       default: false
     }
   },
-  setup () {
-    const routes = [
-      {
-        title: 'Home',
-        url: '/'
-      },
-      {
-        title: 'about',
-        url: '/about'
-      }
-    ]
-
+  data () {
     return {
       routes
     }
   }
+  // setup () {
+
+  //   return {
+  //     routes
+  //   }
+  // }
 }
 </script>
 
