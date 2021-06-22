@@ -1,19 +1,18 @@
 <template>
   <TheHeader
-      @sidenavToggle="displaySidenav = !displaySidenav"
-    />
-    <TheSidenav
-      :show="displaySidenav"
-      @close="displaySidenav = false"
-    />
+    class="large-screens"
+  />
+  <TheSideNavToggle
+    class="mobile-screens"
+  />
   <router-view/>
 </template>
 
 <script>
 import TheHeader from '@/components/navigation/TheHeader'
-import TheSidenav from '@/components/navigation/TheSidenav.vue'
+import TheSideNavToggle from '@/components/navigation/TheSideNavToggle.vue'
 export default {
-  components: { TheHeader, TheSidenav },
+  components: { TheHeader, TheSideNavToggle },
   setup() {
     const displaySidenav = false
     return {
@@ -25,4 +24,15 @@ export default {
 
 <style lang="scss">
 @import url('./assets/main.scss');
+.large-screens {
+  display: none;
+}
+@media (min-width: 1000px) {
+  .large-screens {
+    display: block;
+  }
+  .mobile-screens {
+    display: none;
+  }
+}
 </style>

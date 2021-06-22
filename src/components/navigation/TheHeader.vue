@@ -6,7 +6,6 @@
           <img src="/img/carmel-s-tekno-logo-215x53 1.svg" alt="">
         </router-link>
       </div>
-      <TheSideNavToggle @toggle="$emit('sidenavToggle')" />
       <div class="navigation-items">
         <ul class="nav-list">
           <li
@@ -31,11 +30,9 @@
 </template>
 
 <script>
-import TheSideNavToggle from '@/components/navigation/TheSideNavToggle.vue'
 import routes from '@/data/url.js'
 export default {
   name: 'TheHeader',
-  components: { TheSideNavToggle },
   setup () {
 
     return {
