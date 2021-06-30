@@ -2,15 +2,14 @@
   <div>
     <div class="bg-hero">
       <div class="bg-text container">
-        <h2>
-          Our Services
-        </h2>
+        <h1>
+          Services
+        </h1>
       </div>
     </div>
 
     <section class="our-services">
       <div class="container our-service-text">
-        <h2>Our Services Overview</h2>
         <p>
           Carmtek Systems is a leading provider in SCADA (Supervisory Control and Data Acquisition) communication technologies. With over 20 years of experience in providing industrial remote monitoring-and-control solutions that range from the Oil & Gas to Water industry, our experience in the field ensures that customer expectations are met with reliable products and quality services.
         </p>
@@ -18,23 +17,23 @@
     </section>
     <section class="service-cards">
       <div class="container">
-        <div class="row">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
           <router-link
-            v-for="serve in services"
-            :key="serve.title"
-            :to="`/services/${serve.id}`"
-            class="col-12 col-md-6 col-lg-4"
+            v-for="service in services"
+            :key="service.title"
+            :to="`/services/${service.id}`"
+            class="col my-3"
           >
-            <div class="card services">
+            <div class="card">
+              <div class="services-thumbnail" :style="{backgroundImage:'url(' + `/img/${service.img}` + ')'}"></div>
               <div class="card-body">
-                <span>{{ serve.title }}</span>
+                <h5 class="card-title">{{ service.title }}</h5>
               </div>
             </div>
           </router-link>
-        </div>
+      </div>
       </div>
     </section>
-    <section class="bg-hero-bottom"></section>
     <Footer />
   </div>
 </template>
@@ -57,13 +56,13 @@ export default {
 
 <style lang="scss" scoped>
 .our-services{
-  color: #fff;
-  background-color: var(--base-dark);
+  color: #000;
+  background-color: #fff;
   padding: 40px 0px;
-  text-align: center;
+  text-align: left;
 }
 .service-cards {
-  background-color: var(--base-gray);
+  background-color: var(--base-dark-gray);
   padding: 40px 0px;
 
   a{
@@ -75,35 +74,35 @@ export default {
   }
   .card-body{
     padding: 0px;
-    height: 52px;
+    height: 60px;
     display: flex;
-    padding: 10px;
+    padding: 5px;
     
     span {
       align-self: center;
     }
   }
   .services{
-    background-color: var(--base-dark-gray);
+    background-color: #fff;
     border-left: 2px solid var(--base-color);
     margin-bottom: 10px;
   }
-}
-.bg-hero-bottom {
-  background: linear-gradient(rgba(21, 37, 81, 0.48), rgba(21, 37, 81, 0.48)), url('/img/Front-Page-picture.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 248px;
-  margin-bottom: 40px;
+  .services-thumbnail {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px;
+  }
 }
 
 @media (min-width: 1000px) {
   .our-services {
     padding: 112px 0px;
     p {
-      width: 795px;
+      width: 865px;
       margin: auto;
+      padding-left: 65px;
+      border-left: 2px solid var(--base-color);
     }
   }
   .service-cards {

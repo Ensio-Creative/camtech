@@ -256,50 +256,6 @@ export default {
   }
 }
 
-.solutions-first-half{
-  color: #fff;
-  background-color: var(--base-dark);
-  height: 50vh;
-  display: flex;
-
-  .container {
-    align-self: center;
-  }
-}
-.solution-second-half {
-  background: linear-gradient(rgba(21, 37, 81, 0.48), rgba(21, 37, 81, 0.48)), url('/img/Front-Page-picture.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 50vh;
-}
-.forward-thinking {
-  margin-top: 40px;
-  margin-bottom: 40px;
-
-  .companies-img {
-    text-align: center;
-    margin-top: 10px;
-  }
-  .companies-img img {
-    width: 90px;
-    padding: 10px;
-  }
-  .interested{
-    color: #fff;
-    margin-top: 40px;
-    padding: 50px;
-    background: linear-gradient(rgba(21, 37, 81, 0.48), rgba(21, 37, 81, 0.48)), url('/img/Front-Page-picture.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-
-    button {
-      margin-top: 20px;
-      margin-right: 20px;
-    }
-  }
-}
 @media (min-width: 1000px) {
   .bg-hero {
     height: 90vh;

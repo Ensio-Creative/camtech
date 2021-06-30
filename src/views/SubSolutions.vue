@@ -32,7 +32,7 @@
 </template>
 
 <script>
-import { computed, onMounted, reactive } from 'vue'
+import { computed, watch, reactive } from 'vue'
 import { useRoute } from 'vue-router'
 import solutions from '@/data/solutions.js'
 import Footer from '../components/common/Footer.vue'
@@ -48,15 +48,19 @@ export default {
     const findSolution = computed(() => state.solutions.find(solution => solution.title === route.params.slug))
     
     // const slicedSolutions = computed(() => state)
-    const slicedSolution = () => {
-      const result = state.solutions.filter(solution => solution.title !== route.params.slug)
-      state.otherSolutions = result.slice(0, 3)
-      return state.otherSolutions
-    }
-    
-    onMounted (() => {
-      slicedSolution()
+    // const slicedSolution = () => {
+    //   const result = state.solutions.filter(solution => solution.title !== route.params.slug)
+    //   state.otherSolutions = result.slice(0, 3)
+    //   return state.otherSolutions
+    // }
+    watch(findSolution, (currentValue, oldValue) => {
+      console.log(currentValue);
+      console.log(oldValue);
     })
+    
+    // onMounted (() => {
+    //   slicedSolution()
+    // })
     return {
       state,
       findSolution
