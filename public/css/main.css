@@ -1,14 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
 :root {
-  --main-font: 'Poppins', sans-serif;
-  --base-color: #D32212;
+  --main-font: 'Mulish', sans-serif;
+  --base-color: #FF0000;
+  --base-light-color: #ffe0e0;
   --nav-font: 'Ubuntu', sans-serif;
-  --base-gray: #EDEDEE;
+  --base-gray: #666666;
   --base-dark-gray: #D2D3D4;
-  --base-black: #3D3F46;
-  --base-dark: #111E42;
+  --base-text-color: #666666;
+  --base-dark: #333333;
   --base-blue: #1F377A;
 }
 
@@ -27,6 +28,15 @@ body {
   font-weight: bold;
   border: 0px;
 }
+.btn-outline-base {
+  width: 175px;
+  height: 45px;
+  background-color: #fff;
+  color: var(--base-color);
+  font-size: 16px;
+  font-weight: bold;
+  border: 1px solid var(--base-color);
+}
 .btn-base-white {
   width: 175px;
   height: 45px;
@@ -35,6 +45,15 @@ body {
   font-size: 16px;
   font-weight: bold;
   border: 0px;
+}
+.btn-base-outline-white {
+  width: 175px;
+  height: 45px;
+  background-color: transparent;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  border: 1px solid #fff;
 }
 
 a {

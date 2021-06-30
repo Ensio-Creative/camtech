@@ -3,87 +3,134 @@
     <div class="bg-hero">
       <div class="bg-text container">
         <h2>
-          Wireless <strong>SCADA/IoT and automation
-          solutions</strong> for industries.
+          Industrial leader in 
+          Wireless SCADA/IoT and
+          Automation Solutions
         </h2>
-        <p>The oil and gas industry, power sector and
-            government agencies.
-        </p>
-        <button
-          class="btn-base"
-          @click="$router.push('/solutions')"
-        >
-          BROWSE SOLUTIONS
-        </button>
       </div>
     </div>
-    <section class="what-we-do">
+    <section class="positive-impact container-fluid">
+      <div class="row">
+        <div class="col-12 col-md-7 positive-items">
+          <h2>
+            A positive impact on our environment
+          </h2>
+        </div>
+        <div class="col-12 col-md-5 positive-items">
+          <p>
+            Lorem ipsum dolor sit amet, cosectetuer adipiscing elit, sed diam 
+            nonummy nibh euismod tincidunt 
+            ut laoreet dolore magna aliquam 
+            erat volutpat. Ut wisi enim ad 
+            minim veniam, quis nostrud exerci 
+            tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo 
+            consequat. Duis autem vel eum 
+            iriure dolor in hendrerit in vulputate velit esse molestie consequat,
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="discover-more container-fluid">
+      <div class="row">
+        <div class="col-12 col-md-6 discover-items">
+          <div class="discover-content">
+            <h3>
+              A positive impact on our
+            </h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam 
+              nonummy nibh euismod tincidunt 
+              ut laoreet dolore magna aliquam 
+              erat volutpat. Ut wisi enim ad 
+              minim veniam.
+            </p>
+            <button
+              class="btn-base-outline-white"
+            >
+              DISCOVER MORE 
+            </button>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 discover-items"></div>
+      </div>
+    </section>
+    <section class="container-fluid bg-trailers"></section>
+
+    <section class="environment-impact">
       <div class="container">
         <div class="row">
-          <div class="col-12 col-lg-4">
-            <h6 class="tiny-title">WHAT WE DO</h6>
-            <h2 class="our-sevices">Our Services</h2>
-            <p>
-              Carmtek Systems is a leading provider in SCADA (Supervisory Control and Data Acquisition) communication technologies.
-            </p>
-            <p>
-              With over 20 years of experience in providing industrial remote monitoring-and-control solutions that range from the Oil & Gas to Water industry, our experience in the field ensures that customer expectations are met with reliable products and quality services.
-            </p>
-          </div>
-          <div class="col-12 col-lg-8 card-services">
-            <div class="row">
-              <router-link 
-                v-for="serve in services"
-                :key="serve.title"
-                :to="`/services/${serve.id}`"
-                class="col-12 col-md-6 col-lg-4"
+          <div class="col-12 col-md-4">
+            <div class="environment-content">
+              <h2>
+                A positive impact on our environment
+              </h2>
+              <p>
+                Lorem ipsum dolor sit amet, 
+                consectetuer adipiscing elit, 
+                sed diam nonummy nibh 
+                euismod tincidunt ut laoreet 
+                dolore .
+              </p>
+              <button
+                class="btn-outline-base"
               >
-                <div class="card services">
-                  <div class="card-body">
-                    <span>{{ serve.title }}</span>
+                DISCOVER MORE 
+              </button>
+            </div>
+          </div>
+          <div class="col-12 col-md-8">
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="environment-items">
+                  <div class="body">
+                    <h5>Special title treatment</h5>
+                    <p>With supporting text below as a natural lead-in to additional content.</p>
+                    <router-link to="/">Learn more</router-link>
                   </div>
                 </div>
-              </router-link>
+              </div>
+              <div class="col-sm-6">
+                <div class="environment-items-second">
+                  <div class="body">
+                    <h5>Special title treatment</h5>
+                    <p>With supporting text below as a natural lead-in to additional content.</p>
+                    <router-link to="/">Learn more</router-link>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="container-fluid our-solutions">
-      <div class="row">
-        <div class="col-12 col-md-6 solutions-first-half">
-          <div class="container">
-            <h2 class="solutions-title">
-              Our Solutions
-            </h2>
-            <p class="solution-text">
-              Specializing in industrial wireless SCADA and telemetry solutions, Carmel Systems provides various Class I DIV 2 systems for Oil & Gas, Environmental, Water, Mining and manufacturing applications.
-            </p>
-            <button
-              to="/"
-              class="btn-base"
-            >
-              SEE ALL <img src="img/Vector-arrow.svg" alt="">
-            </button>
-
-          </div>
+    <section class="reach-out">
+      <div class="reach-container">
+        <div class="reach-content">
+          <p>
+            Please reach out to get in touch 
+            with us or learn more about our 
+            services and solutions.
+          </p>
+          <button
+            class="btn-base-outline-white"
+          >
+            CONTACT US
+          </button>
         </div>
-        <div class="col-12 col-md-6 solution-second-half"></div>
       </div>
     </section>
-    
-    <Forward />
     <Footer />
   </div>
 </template>
 
 <script>
 import Footer from '../components/common/Footer.vue'
-import Forward from '../components/common/Forward.vue'
+// import Forward from '../components/common/Forward.vue'
 import services from '@/data/services.js'
 export default {
-  components: { Footer, Forward },
+  components: { Footer },
   name: 'Home',
   setup () {
       return {
@@ -96,7 +143,7 @@ export default {
 <style lang="scss">
 .bg-hero {
   display: flex;
-  background: linear-gradient(rgba(21, 37, 81, 0.48), rgba(21, 37, 81, 0.48)), url('/img/Front-Page-picture.png');
+  background: linear-gradient(rgba(21, 37, 81, 0.48), rgba(21, 37, 81, 0.48)), url('/img/QWTV3392.JPG');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -116,35 +163,96 @@ export default {
     }
   }
 }
-.what-we-do {
-  padding-top: 80px;
-  padding-bottom: 80px;
-  background-color: var(--base-gray);
+.positive-items{
+  background-color: var(--base-light-color);
+  color: var(--base-color);
+  height: 35vh;
+  display: flex;
+  align-items: center;
+}
 
-  .card-services {
-    margin-top: 20px;
-    a {
-      color: #000;
-    }
+.positive-items:last-child {
+  background-color: #fff;
+  color: var(--base-text-color);
+}
+
+.discover-items {
+  background-color: var(--base-color);
+  color: #fff;
+  height: 35vh;
+
+  .discover-content {
+    padding: 20px 0px;
   }
-  .card {
-    border-radius: 0px;
-    border: 0px;
-  }
-  .card-body{
-    padding: 0px;
-    height: 67px;
+}
+
+.discover-items:last-child {
+  background-image: url('/img/HSVG1107.JPG');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bg-trailers {
+  background-image: url('/img/LVPB8098.JPG');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 35vh;
+  margin: 40px 0px;
+}
+
+.environment-items {
+  background-image: url('/img/IEZB6674.JPG');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 30vh;
+  color: #fff;
+  border-radius: 0px;
+  border: 0px;
+  display: flex;
+  align-items: flex-end;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.environment-items-second {
+  background-image: url('/img/OLBW0176.JPG');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 30vh;
+  color: #fff;
+  border-radius: 0px;
+  border: 0px;
+  display: flex;
+  align-items: flex-end;
+  padding: 20px;
+}
+
+.environment-impact {
+  padding: 0px 0px 50px 0px;
+}
+
+.environment-content {
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+
+.reach-out {
+  height: 30vh;
+  background-image: url('/img/VHED0221.JPG');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  .reach-container {
+    height: 30vh;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
     display: flex;
-    padding: 10px;
-    
-    span {
-      align-self: center;
-    }
-  }
-  .services{
-    background-color: #fff;
-    border-left: 2px solid var(--base-color);
-    margin-bottom: 10px;
+    align-items: center;
   }
 }
 
@@ -208,6 +316,77 @@ export default {
   }
   .solution-second-half {
     height: 70vh;
+  }
+  .positive-items{
+    height: 80vh;
+  }
+  .positive-items h2 {
+    width: 240px;
+    margin: auto;
+  }
+  .positive-items p {
+    border: 1px solid var(--base-color);
+    padding: 50px;
+    position: relative;
+    right: 285px;
+    background-color: #fff;
+  }
+
+  .discover-items {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+
+    .discover-content {
+      width: 400px;
+      margin: auto;
+
+      h2 {
+        width: 220px;
+      }
+
+      p {
+        padding: 40px 0px;
+      }
+    }
+  }
+
+  .bg-trailers {
+    height: 50vh;
+  }
+
+  .environment-content {
+    width: 233px;
+    margin: auto;
+    padding: 0px !important;
+  }
+
+  .environment-items {
+    height: 50vh;
+  }
+  .environment-items-second {
+    height: 50vh;
+  }
+  .reach-out {
+    height: 60vh;
+
+    .reach-container {
+      background: rgba(0, 0, 0, 0.6);
+      height: 60vh;
+      color: #fff;
+      width: 668px;
+      float: right;
+      padding: 110px;
+      display: flex;
+      align-items: center;
+
+      .reach-content {
+        width: 314px;
+         button {
+           margin-top: 20px;
+         }
+      }
+    }
   }
 }
 </style>

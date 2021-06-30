@@ -3,7 +3,7 @@
     <header class="the-header container">
       <div class="nav-img">
         <router-link to="/">
-          <img src="/img/carmel-s-tekno-logo-215x53 1.svg" alt="">
+          <img src="/img/carmtek-logo.svg" alt="">
         </router-link>
       </div>
       <div class="navigation-items">
@@ -21,9 +21,6 @@
             </router-link>
           </li>
         </ul>
-        <div class="search">
-          <img src="img/Vector.svg" alt="">
-        </div>
       </div>
     </header>
   </div>
@@ -86,7 +83,7 @@ export default {
   }
   .navigation-items {
     display: flex;
-    width: 800px;
+    width: 425px;
     justify-content: space-between;
   }
   .header-container {
@@ -103,14 +100,14 @@ export default {
 }
 
 .nav-item {
-  margin: 0 10px;
+  margin: 10px 10px;
 }
 
 .nav-item a {
   text-decoration: none;
   font-size: 13px;
-  font-weight: 400;
-  padding: 0px 20px 43px 20px;
+  font-weight: bold;
+  padding: 0px 10px 10px 10px;
   color: var(--base-dark);
 }
 
@@ -118,6 +115,5 @@ export default {
 .nav-item a:active,
 .nav-item a.router-link-active {
   color: var(--base-color);
-  border-bottom: 2px solid var(--base-color);
 }
 </style>

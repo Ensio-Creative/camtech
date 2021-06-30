@@ -1,29 +1,12 @@
 <template>
   <div class="footer">
-    <div class="nav-footer">
-      <router-link
-        v-for="route in routes"
-        :key="route.url"
-        :to="route.url"
-        class="nav-footer-item{
-          padding: 10px;"
-      >
-        {{ route.title }}
-      </router-link>
+    <div class="footer-img container">
+      <img src="/img/carmtek-logo-white.svg" alt="">
     </div>
     <hr>
-    <div class="privacy">
-      <span class="privacy-item">&copy; {{ date.getFullYear() }} Carmel’s Tekno Limited </span>
-      <router-link
-        to="/"
-      >
-        Privacy Policy
-      </router-link>
-      <router-link
-        to="/"
-      >
-        Terms & Conditions
-      </router-link>
+    <div class="privacy container">
+      <span class="privacy-item">&copy; {{ date.getFullYear() }} Carmels Group. All rights reserved.</span>
+      <span class="privacy-item">Site Credit: <strong> <a href="www.ensiocreative.com">Ensio Creative</a> </strong></span>
     </div>
   </div>
 </template>
@@ -45,17 +28,13 @@ export default {
 <style lang="scss" scoped>
 .footer {
   background-color: var(--base-color);
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding: 30px 0px 60px 0px;
 
-  .nav-footer {
-    color: #fff;
+  .footer-img {
     text-align: center;
-
-    a{
-      // padding: 10px;
-      margin-right: 10px;
-    }
+  }
+  .footer-img img {
+    width: 300px;
   }
   hr {
     background: #fff;
@@ -79,12 +58,21 @@ export default {
   }
 }
 @media (min-width: 1000px) {
-  .footer .nav-footer a {
-    margin-right: 50px;
+  .footer-img {
+    text-align: left !important;
+  }
+  .footer-img img {
+    width: 220px !important;
   }
   .footer .privacy .privacy-item {
     display: inline;
     padding-right: 20px;
-}
+    float: left;
+  }
+  .footer .privacy .privacy-item:last-child {
+    display: inline;
+    padding-right: 20px;
+    float: right;
+  }
 }
 </style>
