@@ -12,9 +12,9 @@
     <section class="positive-impact container-fluid">
       <div class="row">
         <div class="col-12 col-md-7 positive-items">
-          <h2>
+          <h1>
             A positive impact on our environment
-          </h2>
+          </h1>
         </div>
         <div class="col-12 col-md-5 positive-items">
           <p>
@@ -35,9 +35,9 @@
       <div class="row">
         <div class="col-12 col-md-6 discover-items">
           <div class="discover-content">
-            <h3>
+            <h2>
               A positive impact on our
-            </h3>
+            </h2>
             <p>
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam 
               nonummy nibh euismod tincidunt 
@@ -152,6 +152,11 @@ export default {
   .bg-text {
     color: #fff;
     align-self: center;
+
+    // h2 {
+    //   font-famil
+    // }
+
     .btn-base {
       width: 175px;
       height: 45px;
@@ -276,8 +281,8 @@ export default {
   .positive-items{
     height: 80vh;
   }
-  .positive-items h2 {
-    width: 240px;
+  .positive-items h1 {
+    width: 340px;
     margin: auto;
   }
   .positive-items p {

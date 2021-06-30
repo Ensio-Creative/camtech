@@ -2,9 +2,9 @@
   <div>
     <div class="bg-hero">
       <div class="bg-text container">
-        <h1>
+        <h2>
           Services
-        </h1>
+        </h2>
       </div>
     </div>
 

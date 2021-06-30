@@ -12,57 +12,34 @@
       <div class="row justify-content-center full-screen">
         <div class="col-12 col-md-11">
           <div class="row contact-info">
-            <div class="col-12 col-md-6 contact-first-half">
-              <h2>Contact Information</h2>
-              <div class="address">
-                <h4>Address</h4>
-                <p>
-                  Plot 385 Prof. Okujagu Street, Off Peter Odili Road, Trans-Amadi Industrial Layout,
-                  Port Harcourt, Nigeria.
-                </p>
-              </div>
-              <div class="address">
-                <h4>Phone</h4>
-                <p>
-                  (+234) 909 199 6569
-                  <br>
-                  (+234) 813 845 7481
-                </p>
-              </div>
-            </div>
-            <div class="col-12 col-md-6 form-half">
+            <div class="col-12 form-half">
               <form @submit.prevent="onSubmit">
+              <h2>Get in touch</h2>
                 <div class="row">
                   <div class="col-12">
                     <AppControlInput
                       v-model="state.fullName"
                       type="text"
                       required
-                      placeholder="Full name"
-                    >
-                      Full Name
-                    </AppControlInput>
+                      placeholder="Name"
+                    />
                     <p>{{ state.fullName }}</p>
-                  </div>
-                  <div class="col-12">
-                    <AppControlInput
-                      v-model="state.email"
-                      type="email"
-                      required
-                      placeholder="Email"
-                    >
-                      Email
-                    </AppControlInput>
                   </div>
                   <div class="col-12">
                     <AppControlInput
                       v-model="state.subject"
                       type="text"
                       required
-                      placeholder="Subject"
-                    >
-                      Subject
-                    </AppControlInput>
+                      placeholder="Company"
+                    />
+                  <div class="col-12">
+                    <AppControlInput
+                      v-model="state.email"
+                      type="email"
+                      required
+                      placeholder="Email"
+                    />
+                  </div>
                   </div>
                   <div class="col-12">
                     <AppTextarea
@@ -70,19 +47,56 @@
                       type="text"
                       required
                       placeholder="Message"
-                    >
-                      Message
-                    </AppTextarea>
+                    />
                   </div>
                   <button
                     class="btn-base mb-4 mt-2"
                     type="submit"
                   >
-                    SUBMIT
+                    SEND MESSAGE
                   </button>
                   <span>{{ state.errorMessage }}</span>
                 </div>
               </form>
+            </div>
+            <div class="col-12 contact-first-half">
+              <h2>Contacts</h2>
+              <div class="row">
+                <div class="col-12 col-md-6 mt-4">
+                  <p>
+                    Plot 385 Prof. Okujagu Street, 
+                    Off Peter Odili Road,
+                    Trans-Amadi Industrial Layout, 
+                    Port Harcourt, Nigeria
+                    <br class="mt-3">
+                    M: +234(0)909.199.6571
+                    <br>
+                    E: info@carmel-s.com
+                  </p>
+                </div>
+                <div class="col-12 col-md-6 mt-4">
+                  <p>
+                    1B Alh. Hussein Sunmonu St.,
+                    Lekki Phase 1, Lagos 
+                  </p>
+                  <p>
+                    M: +234(0)909.199.6571
+                    <br>
+                    E: info@carmel-s.com
+                  </p>
+                </div>
+                <div class="col-12 col-md-6">
+                  <p>
+                    10 Malvern Road AYLESBURY,
+                    BUCKS HP20 1QF,
+                    England
+                    <br class="mt-3">
+                    M: +234(0)909.199.6571
+                    <br>
+                    E: info@carmel-s.com
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -148,23 +162,28 @@ export default {
 
 <style lang="scss" scoped>
 .contact-info {
-  padding: 0px 0px 40px 0px;
-
+  padding: 20px 0px 40px 0px;
+  
+  h2 {
+    font-weight: bold;
+  }
   .contact-first-half{
-    background-color: #EBEFFA;
+    background-color: #fff;
     padding: 40px;
-
+    .row {
+      border-top: 2px solid var(--base-dark-gray);
+    }
     h4 {
       padding: 10px 0px 0px 0px;
     }
   }
   .form-half{
-    background-color:  var(--base-blue);
+    background-color:  #fff;
     form {
       padding: 10px 20px;
-      color: #fff;
+      color: #000;
       button{
-        margin: auto;
+        width: 100%;
       }
       span {
         color: var(--base-color);
@@ -179,6 +198,20 @@ export default {
   }
   .contact-info {
     padding: 0px;
+
+    .form-half{
+      background-color:  #fff;
+      form {
+        padding: 30px 50px;
+        color: #000;
+        button{
+          width: 100%;
+        }
+        span {
+          color: var(--base-color);
+        }
+      }
+    }
   }
 }
 </style>

@@ -226,7 +226,6 @@ body {
 .window .header ul.menu li.menu-item a:active,
 .window .header ul.menu li.menu-item a.router-link-active {
   color: var(--base-color);
-  border-bottom: 1px solid var(--base-color);
 }
 .window .header.menu-opened {
   height: 100%;

@@ -47,7 +47,10 @@ export default {
   box-sizing: border-box;
   font: inherit;
   padding: 5px;
-  border: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-top: 0px;
+  border-bottom: 1px solid var(--base-dark-gray) !important;
   border-radius: 0px;
 }
 
