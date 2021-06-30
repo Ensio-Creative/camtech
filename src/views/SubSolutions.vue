@@ -1,30 +1,42 @@
 <template>
   <div>
-    <div class="container solution-container">
-      <h5>Solutions/{{ $route.params.slug }}</h5>
-      <div class="solution-thumbnail" :style="{backgroundImage:'url(' + `/img/${findSolution.img}` + ')'}"></div>
-      <h4>{{ findSolution.title }}</h4>
-      <p>{{ findSolution.description }}</p>
+    <div class="bg-hero">
+      <div class="bg-text container">
+        <h5>Solutions</h5>
+        <h2>
+          {{ findSolution.title }}
+        </h2>
+      </div>
     </div>
-    <section class="solutions">
+
+    <section class="solutions-description">
       <div class="container">
-        <h4 class="mb-4">Other solutions</h4>
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-          <router-link
-            v-for="solution in state.otherSolutions"
-            :key="solution.title"
-            :to="`/solutions/${solution.title}`"
+        <p>
+          {{ findSolution.description }}
+        </p>
+        <p>
+          {{ findSolution.subDescription }}
+        </p>
+      </div>
+      <div class="solutions-img" :style="{backgroundImage:'url(' + `/img/${findSolution.img}` + ')'}"></div>
+    </section>
+
+    <section class="solutions-cards">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center">
+          <div
+            v-for="solutions in findSolution.subSolutions"
+            :key="solutions.title"
             class="col my-3"
           >
             <div class="card">
-              <div class="solution-thumbnail" :style="{backgroundImage:'url(' + `/img/${solution.img}` + ')'}"></div>
               <div class="card-body">
-                <h5 class="card-title">{{ solution.title }}</h5>
-                <p class="card-text">{{ solution.description }}</p>
+                <h3>{{ solutions.title }}</h3>
+                <p class="card-title">{{ solutions.description }}</p>
               </div>
             </div>
-          </router-link>
-      </div>
+          </div>
+        </div>
       </div>
     </section>
     <Footer />
@@ -45,7 +57,7 @@ export default {
     })
     const route = useRoute()
 
-    const findSolution = computed(() => state.solutions.find(solution => solution.title === route.params.slug))
+    const findSolution = computed(() => state.solutions.find(solution => solution.id === route.params.slug))
     
     // const slicedSolutions = computed(() => state)
     // const slicedSolution = () => {
@@ -70,14 +82,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.solution-container {
+.solutions-description {
   padding: 20px 0px;
 
-  h5{
-    color: var(--base-color);
-    padding: 20px 0px;
-  }
-  .solution-thumbnail {
+  .solutions-img {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -90,6 +98,16 @@ export default {
 
   p {
     padding: 20px 0px;
+  }
+}
+
+.solutions-cards {
+  padding: 40px 0px;
+  .card {
+    border: 0px;
+    h3 {
+      color: var(--base-color);
+    }
   }
 }
 </style>
