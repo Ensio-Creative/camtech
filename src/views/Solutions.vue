@@ -62,6 +62,7 @@ export default {
     color: #fff;
     display: flex;
     align-items: flex-end;
+    margin-bottom: 20px;
 
     .btn-outline-base {
       color: #fff;
@@ -77,6 +78,9 @@ export default {
 @media (min-width: 1000px) {
   .our-solution {
     height: 380px;
+  }
+  .solutions .solutions-item {
+    margin-bottom: 0px;
   }
 }
 </style>

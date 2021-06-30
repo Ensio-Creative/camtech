@@ -115,6 +115,7 @@
           </p>
           <button
             class="btn-base-outline-white"
+            @click="$router.push('/contact')"
           >
             CONTACT US
           </button>
@@ -179,15 +180,16 @@ export default {
 .positive-items:last-child {
   background-color: #fff;
   color: var(--base-text-color);
+  height: 45vh;
 }
 
 .discover-items {
   background-color: var(--base-color);
   color: #fff;
-  height: 35vh;
+  height: 45vh;
 
   .discover-content {
-    padding: 20px 0px;
+    padding: 30px 0px;
   }
 }
 
