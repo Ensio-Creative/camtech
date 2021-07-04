@@ -3,7 +3,7 @@
     <div class="bg-hero">
       <div class="bg-text container">
         <h2>
-          Our Solutions
+          Industry Solutions
         </h2>
       </div>
     </div>
@@ -58,7 +58,7 @@ export default {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 50vh;
+    height: 70vh;
     color: #fff;
     display: flex;
     align-items: flex-end;
@@ -66,11 +66,14 @@ export default {
 
     .btn-outline-base {
       color: #fff;
-      font-size: 15px;
     }
 
     .solutions-content {
-      padding: 10px;
+      padding: 40px ;
+
+      h4 {
+        font-family: var(--header-font);
+      }
     }
   }
 }
@@ -78,6 +81,9 @@ export default {
 @media (min-width: 1000px) {
   .our-solution {
     height: 380px;
+  }
+  .solutions {
+    padding: 120px 0px;
   }
   .solutions .solutions-item {
     margin-bottom: 0px;

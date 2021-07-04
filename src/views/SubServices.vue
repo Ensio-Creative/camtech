@@ -43,10 +43,10 @@
       <h4>Other services</h4>
       <div class="row">
         <div
-          v-for="service in state.otherServices"
-          :key="service.title"
+          v-for="service in serve.value"
+          :key="service.value.title"
           class="col-12 col-4 other-services-items"
-          :style="{backgroundImage:'url(' + `/img/${service.img}` + ')'}"
+          :style="{backgroundImage:'url(' + `/img/${service.value.img}` + ')'}"
         >
           <h3>{{ service.title }}</h3>
         </div>
@@ -57,35 +57,36 @@
 </template>
 
 <script>
-import { computed, watch, reactive } from 'vue'
+import { computed, watch, ref } from 'vue'
 import { useRoute } from 'vue-router'
 import services from '@/data/services.js'
 import Footer from '../components/common/Footer.vue'
 export default {
   components: { Footer },
   setup () {
-    const state = reactive({
-      otherServices: []
-    })
+    const otherServices = ref([])
+    const serve = ref(services)
+
     const route = useRoute()
     const findService = computed(() => services.find(service => service.id === route.params.slug))
-    let adams
+    // const splicedServices = computed(() => {})
     const slicedServices = () => {
-      const result = services.filter(services => services.title !== route.params.slug)
-      state.otherServices = result.slice(0, 3)
-      adams = services
-      console.log('Fired')
-      return state.otherServices
+      const result = serve.value.filter(services => services.title !== route.params.slug)
+      otherServices.value = result.slice(0, 3)
+      console.log(result)
+      // console.log(otherServices.value)
     }
-      console.log(adams)
+    // console.log(otherServices.value)
 
     watch (findService, () => {
       slicedServices()
     })
 
     return {
+      slicedServices,
       findService,
-      state
+      otherServices,
+      serve
     }
   }
 }
@@ -132,14 +133,18 @@ export default {
   .services-description {
     
     .container {
-      padding: 48px;
+      padding: 88px 0px 10px 0px;
       position: relative;
       top: -90px;
       background-color: #fff;
+
+      p {
+        padding: 0px 90px 0px 90px;
+      }
     }
 
     .service-img {
-      margin-top: 50px;
+      margin-top: 75px;
       height: 60vh;
     }
   }

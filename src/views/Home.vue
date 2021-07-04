@@ -13,19 +13,12 @@
       <div class="row">
         <div class="col-12 col-md-7 positive-items">
           <h1>
-            A positive impact on our environment
+            Industrial Solutions for Remote Assets
           </h1>
         </div>
         <div class="col-12 col-md-5 positive-items">
           <p>
-            Lorem ipsum dolor sit amet, cosectetuer adipiscing elit, sed diam 
-            nonummy nibh euismod tincidunt 
-            ut laoreet dolore magna aliquam 
-            erat volutpat. Ut wisi enim ad 
-            minim veniam, quis nostrud exerci 
-            tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo 
-            consequat. Duis autem vel eum 
-            iriure dolor in hendrerit in vulputate velit esse molestie consequat,
+            We are at the forefront of industrial automation solutions providing advanced communication systems for the control and management of remote assets. Our automation services and solutions include both hardware and software with full stack of services for creating a fully connected ecosystem that enables the remote tracking, monitoring and control of industrial assets, operations and people reliably.
           </p>
         </div>
       </div>
@@ -36,17 +29,14 @@
         <div class="col-12 col-md-6 discover-items">
           <div class="discover-content">
             <h2>
-              A positive impact on our
+              End-to-End SCADA/IoT Services
             </h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam 
-              nonummy nibh euismod tincidunt 
-              ut laoreet dolore magna aliquam 
-              erat volutpat. Ut wisi enim ad 
-              minim veniam.
+              We provide an End-to-End SCADA/IoT services with specilized systems that minimize downtime and maximize operation output.
             </p>
             <button
               class="btn-base-outline-white"
+              @click="$router.push('/services')"
             >
               DISCOVER MORE 
             </button>
@@ -60,41 +50,36 @@
     <section class="environment-impact">
       <div class="container">
         <div class="row">
-          <div class="col-12 col-md-4">
+          <div class="col-12 col-md-5">
             <div class="environment-content">
               <h2>
-                A positive impact on our environment
+                Industrial Automation Solutions
               </h2>
               <p>
-                Lorem ipsum dolor sit amet, 
-                consectetuer adipiscing elit, 
-                sed diam nonummy nibh 
-                euismod tincidunt ut laoreet 
-                dolore .
+                We provide effective industrial remote tracking, monitoring and control solutions.
               </p>
               <button
                 class="btn-outline-base"
+                @click="$router.push('/solutions')"
               >
                 DISCOVER MORE 
               </button>
             </div>
           </div>
-          <div class="col-12 col-md-8">
+          <div class="col-12 col-md-7">
             <div class="row">
               <div class="col-sm-6">
                 <div class="environment-items">
                   <div class="body">
-                    <h5>Special title treatment</h5>
-                    <p>With supporting text below as a natural lead-in to additional content.</p>
+                    <h5>Industrial SCADA, Telemetry/ IoT Solutions</h5>
                     <router-link to="/">Learn more</router-link>
                   </div>
                 </div>
               </div>
               <div class="col-sm-6">
-                <div class="environment-items-second">
+                <div class="environment-items">
                   <div class="body">
-                    <h5>Special title treatment</h5>
-                    <p>With supporting text below as a natural lead-in to additional content.</p>
+                    <h5>Cloud Based SCADA and RTU Solutions</h5>
                     <router-link to="/">Learn more</router-link>
                   </div>
                 </div>
@@ -109,9 +94,7 @@
       <div class="reach-container">
         <div class="reach-content">
           <p>
-            Please reach out to get in touch 
-            with us or learn more about our 
-            services and solutions.
+            Reach out for complete service or technical support. We are here to help you.
           </p>
           <button
             class="btn-base-outline-white"
@@ -206,7 +189,6 @@ export default {
   background-repeat: no-repeat;
   background-position: center;
   height: 35vh;
-  margin: 40px 0px;
 }
 
 .environment-items {
@@ -222,23 +204,15 @@ export default {
   align-items: flex-end;
   padding: 20px;
   margin-bottom: 20px;
-}
-.environment-items-second {
-  background-image: url('/img/OLBW0176.JPG');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 30vh;
-  color: #fff;
-  border-radius: 0px;
-  border: 0px;
-  display: flex;
-  align-items: flex-end;
-  padding: 20px;
+
+  h5 {
+    font-family: var(--header-font);
+    font-size: 23px;
+  }
 }
 
 .environment-impact {
-  padding: 0px 0px 50px 0px;
+  padding: 100px 0px;
 }
 
 .environment-content {
@@ -265,10 +239,11 @@ export default {
 
 @media (min-width: 1000px) {
   .bg-hero {
-    height: 90vh;
+    height: 100vh;
 
     h2 {
       width: 620px;
+      font-size: 51px;
     }
     p {
       width: 350px;
@@ -281,7 +256,11 @@ export default {
     height: 70vh;
   }
   .positive-items{
-    height: 80vh;
+    height: 100vh;
+  }
+  .positive-items:last-child{
+    height: 100vh;
+    width: 533px;
   }
   .positive-items h1 {
     width: 340px;
@@ -289,9 +268,9 @@ export default {
   }
   .positive-items p {
     border: 1px solid var(--base-color);
-    padding: 50px;
+    padding: 100px 30px 120px 30px;
     position: relative;
-    right: 285px;
+    right: 195px;
     background-color: #fff;
   }
 
@@ -310,32 +289,40 @@ export default {
 
       p {
         padding: 40px 0px;
+        font-size: 18px;
+        color: #fff;
       }
     }
   }
 
   .bg-trailers {
-    height: 50vh;
+    height: 80vh;
   }
 
   .environment-content {
-    width: 233px;
-    margin: auto;
+    width: 395px;
     padding: 0px !important;
+
+    h2 {
+      color: var(--base-color);
+    }
+
+    p {
+        padding: 40px 0px;
+        font-size: 18px;
+      }
   }
 
   .environment-items {
-    height: 50vh;
+    height: 58vh;
   }
-  .environment-items-second {
-    height: 50vh;
-  }
+
   .reach-out {
-    height: 60vh;
+    height: 80vh;
 
     .reach-container {
       background: rgba(0, 0, 0, 0.6);
-      height: 60vh;
+      height: 80vh;
       color: #fff;
       width: 668px;
       float: right;
@@ -345,11 +332,20 @@ export default {
 
       .reach-content {
         width: 314px;
+        p {
+          font-size: 18px;
+          color: #fff;
+        }
          button {
            margin-top: 20px;
          }
       }
     }
   }
+}
+
+span {
+  font-size: 18px;
+  color: var(--base-text-color);
 }
 </style>

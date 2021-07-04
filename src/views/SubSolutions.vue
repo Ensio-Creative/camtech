@@ -83,7 +83,7 @@ export default {
 
 <style lang="scss" scoped>
 .solutions-description {
-  padding: 20px 0px;
+  padding: 60px 0px;
 
   .solutions-img {
     background-position: center;
@@ -107,6 +107,14 @@ export default {
     border: 0px;
     h3 {
       color: var(--base-color);
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  .solutions-description {
+    .container {
+      padding: 0px 90px 60px 90px;
     }
   }
 }

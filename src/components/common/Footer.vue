@@ -28,7 +28,7 @@ export default {
 <style lang="scss" scoped>
 .footer {
   background-color: var(--base-color);
-  padding: 30px 0px 60px 0px;
+  padding: 40px 0px 60px 0px;
 
   .footer-img {
     text-align: center;
@@ -49,7 +49,8 @@ export default {
 
     .privacy-item{
       display: block;
-
+      font-size: 12px;
+      color: #fff;
     }
 
     a{

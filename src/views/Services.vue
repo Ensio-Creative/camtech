@@ -11,7 +11,7 @@
     <section class="our-services">
       <div class="container our-service-text">
         <p>
-          Carmtek Systems is a leading provider in SCADA (Supervisory Control and Data Acquisition) communication technologies. With over 20 years of experience in providing industrial remote monitoring-and-control solutions that range from the Oil & Gas to Water industry, our experience in the field ensures that customer expectations are met with reliable products and quality services.
+          We provide SCADA (Supervisory Control and Data Acquisition) communication technology services for remote control, monitor, store and display accross different sectors which include Oil & Gas, Power Generation and Distribution, Mining, Manufacturing and Water Systems. With years of experience in industrial automation and our team of experienced engineers, we provide top notch services with best of industry standards.
         </p>
       </div>
     </section>
@@ -71,15 +71,16 @@ export default {
   .card {
     border-radius: 0px;
     border: 0px;
+    height: 49vh;
   }
   .card-body{
-    padding: 0px;
-    height: 60px;
+    height: 145px;
     display: flex;
-    padding: 5px;
+    padding: 21px;
     
-    span {
+    h5 {
       align-self: center;
+      font-family: var(--header-font);
     }
   }
   .services{
@@ -92,6 +93,7 @@ export default {
     background-repeat: no-repeat;
     background-size: cover;
     padding: 100px;
+    height: 40vh;
   }
 }
 

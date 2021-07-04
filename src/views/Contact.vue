@@ -3,7 +3,7 @@
     <div class="bg-hero">
       <div class="bg-text container">
         <h2>
-          Our Contact
+          Contact Us
         </h2>
       </div>
     </div>
@@ -59,42 +59,42 @@
                 </div>
               </form>
             </div>
-            <div class="col-12 contact-first-half">
-              <h2>Contacts</h2>
-              <div class="row">
+            <div class="col-12">
+              <div class="row contact-first-half">
+                <h2>Contacts</h2>
                 <div class="col-12 col-md-6 mt-4">
                   <p>
                     Plot 385 Prof. Okujagu Street, 
                     Off Peter Odili Road,
                     Trans-Amadi Industrial Layout, 
                     Port Harcourt, Nigeria
-                    <br class="mt-3">
+                  </p>
+                  <span>
                     M: +234(0)909.199.6571
                     <br>
                     E: info@carmel-s.com
-                  </p>
+                  </span>
                 </div>
                 <div class="col-12 col-md-6 mt-4">
                   <p>
                     1B Alh. Hussein Sunmonu St.,
                     Lekki Phase 1, Lagos 
                   </p>
-                  <p>
+                  <span>
                     M: +234(0)909.199.6571
                     <br>
                     E: info@carmel-s.com
-                  </p>
+                  </span>
                 </div>
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-md-6 mt-5">
                   <p>
-                    10 Malvern Road AYLESBURY,
-                    BUCKS HP20 1QF,
-                    England
-                    <br class="mt-3">
+                    10 Malvern Road AYLESBURY, BUCKS HP20 1QF,England
+                  </p>
+                  <span>
                     M: +234(0)909.199.6571
                     <br>
                     E: info@carmel-s.com
-                  </p>
+                  </span>
                 </div>
               </div>
             </div>
@@ -166,12 +166,14 @@ export default {
   
   h2 {
     font-weight: bold;
+    border-bottom: 1px solid #f2f2f2;
+    padding-bottom: 22px;
   }
   .contact-first-half{
     background-color: #fff;
     padding: 40px;
     .row {
-      border-top: 2px solid var(--base-dark-gray);
+      border-top: 2px solid var(--base-text-color);
     }
     h4 {
       padding: 10px 0px 0px 0px;
@@ -180,7 +182,7 @@ export default {
   .form-half{
     background-color:  #fff;
     form {
-      padding: 10px 20px;
+      padding: 10px 50px;
       color: #000;
       button{
         width: 100%;
@@ -192,6 +194,9 @@ export default {
   }
 }
 @media (min-width: 1000px) {
+  .container-fluid {
+    height: 168vh;
+  }
   .full-screen {
     position: relative;
     top: -186px;
@@ -202,7 +207,7 @@ export default {
     .form-half{
       background-color:  #fff;
       form {
-        padding: 30px 50px;
+        padding: 75px 120px;
         color: #000;
         button{
           width: 100%;
@@ -210,6 +215,14 @@ export default {
         span {
           color: var(--base-color);
         }
+      }
+    }
+
+    .contact-first-half {
+      padding: 30px 120px;
+
+      p {
+        width: 353px;
       }
     }
   }
