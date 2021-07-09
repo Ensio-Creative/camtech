@@ -25,7 +25,7 @@
             class="col my-3"
           >
             <div class="card">
-              <div class="services-thumbnail" :style="{backgroundImage:'url(' + `/img/${service.img}` + ')'}" />
+              <div class="services-thumbnail" :style="{backgroundImage:'url(' + `/img/${service.imgThumbnail}` + ')'}" />
               <div class="card-body">
                 <h5 class="card-title">
                   {{ service.title }}
@@ -55,6 +55,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.bg-hero {
+  background: linear-gradient(rgba(21, 37, 81, 0.48), rgba(21, 37, 81, 0.48)), url('/img/carmtek-services-header-img.jpg');
+  height: 79vh;
+  background-position: bottom;
+}
 .our-services{
   color: #000;
   background-color: #fff;

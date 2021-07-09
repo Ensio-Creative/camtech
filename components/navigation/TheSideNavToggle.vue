@@ -15,7 +15,7 @@
       </div>
       <div class="icon icon-apple">
         <router-link to="/">
-          <img src="~/assets/img/carmtek-logo.svg" alt="">
+          <img src="/img/carmtek-logo.svg" alt="">
         </router-link>
       </div>
       <ul

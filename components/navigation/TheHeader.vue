@@ -3,7 +3,7 @@
     <header class="the-header container">
       <div class="nav-img">
         <NuxtLink to="/">
-          <img src="~/assets/img/carmtek-logo.svg" alt="">
+          <img src="/img/carmtek-logo.svg" alt="">
         </NuxtLink>
       </div>
       <div class="navigation-items">

@@ -49,7 +49,12 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
+.bg-hero {
+  background: linear-gradient(rgba(21, 37, 81, 0.48), rgba(21, 37, 81, 0.48)), url('/img/carmtek-solutions-header-img.jpg');
+  height: 79vh;
+  background-position: bottom;
+}
 
 .solutions{
   padding: 80px 0px;

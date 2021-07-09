@@ -32,14 +32,14 @@
                       required
                       placeholder="Company"
                     />
-                    <div class="col-12">
-                      <AppControlInput
-                        v-model="email"
-                        type="email"
-                        required
-                        placeholder="Email"
-                      />
-                    </div>
+                  </div>
+                  <div class="col-12">
+                    <AppControlInput
+                      v-model="email"
+                      type="email"
+                      required
+                      placeholder="Email"
+                    />
                   </div>
                   <div class="col-12">
                     <AppTextarea
@@ -128,6 +128,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.bg-hero {
+  background: linear-gradient(rgba(21, 37, 81, 0.48), rgba(21, 37, 81, 0.48)), url('/img/carmtek-contact-header-img.jpg');
+  height: 79vh;
+  background-position: bottom;
+}
 .contact-info {
   padding: 20px 0px 40px 0px;
 

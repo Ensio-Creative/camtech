@@ -1,7 +1,7 @@
 <template>
   <div class="footer">
     <div class="footer-img container">
-      <img src="~/assets/img/carmtek-logo-white.svg" alt="">
+      <img src="/img/carmtek-logo-white.svg" alt="">
     </div>
     <hr>
     <div class="privacy container">

@@ -1,7 +1,7 @@
 export default [
   {
     id: '3443rer343',
-    img: 'FSWH0361.JPG',
+    img: 'carmtek-industrial-SCADA-telemetry-IoT-solutions.jpg',
     title: 'Industrial SCADA, Telemetry/ IoT Solutions',
     description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.',
     subDescription: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet magni eaque, cum, vero itaque harum similique, veniam voluptas soluta sunt sit. Quo dolores exercitationem eveniet? Culpa voluptatibus corrupti vel vero.',
@@ -22,7 +22,7 @@ export default [
   },
   {
     id: '3443778343',
-    img: 'JNFJ6786.JPG',
+    img: 'carmtek-cloud-based-SCADA-and-RTU-solutions.jpg',
     title: 'Cloud Based SCADA and RTU Solutions',
     description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.',
     subDescription: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet magni eaque, cum, vero itaque harum similique, veniam voluptas soluta sunt sit. Quo dolores exercitationem eveniet? Culpa voluptatibus corrupti vel vero.',

@@ -46,7 +46,7 @@
       <h2>Other solutions</h2>
       <div class="row mt-5">
         <NuxtLink
-          v-for="solution in othersolutions"
+          v-for="solution in otherSolutions"
           :key="solution.title"
           :to="`/solutions/${solution.id}`"
           class="col-12 col-md-4 other-solutions-items"
@@ -83,20 +83,25 @@ export default {
     currentPage: {
       immediate: true,
       handler () {
-        this.filterOthersolutions()
+        this.filterOtherSolutions()
       }
     }
   },
   methods: {
-    filterOthersolutions () {
-      const result = this.solutions.filter(solutions => solutions.id !== this.$route.params.subsolutions)
-      this.othersolutions = result.slice(0, 3)
+    filterOtherSolutions () {
+      const result = this.solutions.filter(solution => solution.id !== this.$route.params.subSolutions)
+      this.otherSolutions = result.slice(0, 3)
     }
   }
 }
 </script>
 
 <style lang="scss" scoped>
+.bg-hero {
+  background: linear-gradient(rgba(21, 37, 81, 0.48), rgba(21, 37, 81, 0.48)), url('/img/carmtek-solutions-header-img.jpg');
+  height: 79vh;
+  background-position: bottom;
+}
 .solutions-description {
   padding: 60px 0px;
 

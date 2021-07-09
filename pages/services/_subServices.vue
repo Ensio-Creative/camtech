@@ -1,6 +1,9 @@
 <template>
   <div>
-    <div class="bg-hero">
+    <div
+      class="bg-hero"
+      :style="{backgroundImage:'linear-gradient(rgba(0, 0, 0, 0), rgba(21, 37, 81, 0.48)), url(' + `/img/${findService.headerImg}` + ')'}"
+    >
       <div class="bg-text container">
         <h5>Services</h5>
         <h2>
@@ -10,13 +13,10 @@
     </div>
     <section class="services-description">
       <div class="container">
-        <p>
-          {{ findService.description }}
-        </p>
-        <p>
-          {{ findService.subDescription }}
-        </p>
-        <div class="service-img" :style="{backgroundImage:'url(' + `/img/${findService.subImg}` + ')'}" />
+        <article>
+          <nuxt-content :document="texts" />
+        </article>
+        <div class="service-img" :style="{backgroundImage:'url(' + `/img/${findService.headerImg}` + ')'}" />
       </div>
     </section>
 
@@ -29,7 +29,7 @@
             class="col my-3"
           >
             <div class="card">
-              <div class="services-thumbnail" :style="{backgroundImage:'url(' + `/img/${service.img}` + ')'}" />
+              <div class="services-thumbnail" :style="{backgroundImage:'url(' + `/img/${service.imgThumbnail}` + ')'}" />
               <div class="card-body">
                 <p class="card-title">
                   {{ service.description }}
@@ -49,7 +49,7 @@
           :key="service.title"
           :to="`/services/${service.id}`"
           class="col-12 col-md-4 other-services-items"
-          :style="{backgroundImage:'url(' + `/img/${service.img}` + ')'}"
+          :style="{backgroundImage:'url(' + `/img/${service.imgThumbnail}` + ')'}"
         >
           <h4>{{ service.title }}</h4>
         </NuxtLink>
@@ -70,7 +70,8 @@ export default {
     return {
       services,
       otherService: [],
-      currentPage: this.$route.params.subServices
+      currentPage: this.$route.params.subServices,
+      texts: ''
     }
   },
   computed: {
@@ -84,6 +85,7 @@ export default {
       immediate: true,
       handler () {
         this.filterOtherServices()
+        this.getText()
       }
     }
   },
@@ -91,18 +93,27 @@ export default {
     filterOtherServices () {
       const result = this.services.filter(service => service.id !== this.$route.params.subServices)
       this.otherService = result.slice(0, 3)
+    },
+    async getText () {
+      this.texts = await this.$content('services', this.$route.params.subServices).fetch()
     }
   }
 }
 </script>
 
 <style lang="scss" scoped>
+.bg-hero {
+  height: 79vh;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .services-description {
   .container {
     padding: 20px 10px;
   }
   .service-img {
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
     height: 30vh;
@@ -148,7 +159,7 @@ export default {
       top: -90px;
       background-color: #fff;
 
-      p {
+       article {
         padding: 0px 90px 0px 90px;
       }
     }

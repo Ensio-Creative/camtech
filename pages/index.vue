@@ -68,17 +68,26 @@
           </div>
           <div class="col-12 col-md-7">
             <div class="row">
-              <div class="col-sm-6">
-                <div class="environment-items">
+              <div
+                v-for="solution in solutions.slice(0, 2)"
+                :key="solution.title"
+                class="col-sm-6"
+              >
+                <div
+                  class="environment-items"
+                  :style="{background:'linear-gradient(rgba(0, 0, 0, 0), rgba(21, 37, 81, 0.48)), url(' + `/img/${solution.img}` + ')'}"
+                >
                   <div class="body">
-                    <h5>Industrial SCADA, Telemetry/ IoT Solutions</h5>
-                    <NuxtLink to="/">
+                    <h5>{{ solution.title }}</h5>
+                    <NuxtLink
+                      :to="`/solutions/${solution.id}`"
+                    >
                       Learn more
                     </NuxtLink>
                   </div>
                 </div>
               </div>
-              <div class="col-sm-6">
+              <!-- <div class="col-sm-6">
                 <div class="environment-items">
                   <div class="body">
                     <h5>Cloud Based SCADA and RTU Solutions</h5>
@@ -87,7 +96,7 @@
                     </NuxtLink>
                   </div>
                 </div>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
@@ -116,13 +125,13 @@
 <script>
 import Footer from '@/components/common/Footer.vue'
 // import Forward from '../components/common/Forward.vue'
-// import services from '@/data/services.js'
+import solutions from '~/static/data/solutions.js'
 export default {
   name: 'Home',
   components: { Footer },
   data () {
     return {
-      services: []
+      solutions
     }
   }
 }
@@ -148,29 +157,30 @@ export default {
   background-color: var(--base-color);
   color: #fff;
   height: 45vh;
-
+  p {
+    color: #fff;
+  }
   .discover-content {
     padding: 30px 0px;
   }
 }
 
 .discover-items:last-child {
-  background-image: url('~/assets/img/HSVG1107.JPG');
+  background-image: url('/img/carmtek-home-services.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .bg-trailers {
-  background-image: url('~/assets/img/LVPB8098.JPG');
+  background-image: url('/img/carmtek-home-bg.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: bottom;
   height: 35vh;
 }
 
 .environment-items {
-  background-image: url('~/assets/img/IEZB6674.JPG');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -200,7 +210,7 @@ export default {
 
 .reach-out {
   height: 30vh;
-  background-image: url('~/assets/img/VHED0221.JPG');
+  background-image: url('/img/carmtek-footer-contact.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -212,6 +222,9 @@ export default {
     padding: 20px;
     display: flex;
     align-items: center;
+    p {
+      color: #fff;
+    }
   }
 }
 
