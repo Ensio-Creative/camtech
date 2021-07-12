@@ -1,6 +1,9 @@
 <template>
   <div>
-    <div class="bg-hero">
+    <div
+      class="bg-hero"
+      :style="{backgroundImage:'linear-gradient(rgba(0, 0, 0, 0), rgba(21, 37, 81, 0.48)), url(' + `/img/${findSolution.headerImg}` + ')'}"
+    >
       <div class="bg-text container">
         <h5>Solutions</h5>
         <h2>
@@ -11,19 +14,19 @@
 
     <section class="solutions-description">
       <div class="container">
-        <p>
-          {{ findSolution.description }}
-        </p>
-        <p>
-          {{ findSolution.subDescription }}
-        </p>
+        <article>
+          <nuxt-content :document="texts" />
+        </article>
+        <div class="solutions-img mt-5" :style="{backgroundImage:'url(' + `/img/${findSolution.headerImg}` + ')'}" />
       </div>
-      <div class="solutions-img" :style="{backgroundImage:'url(' + `/img/${findSolution.img}` + ')'}" />
     </section>
 
-    <section class="solutions-cards">
+    <section
+      v-if="findSolution.subSolutions.length"
+      class="solutions-cards"
+    >
       <div class="container">
-        <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center">
+        <div class="row row-cols-1 row-cols-md-2 g-4 justify-content-center">
           <div
             v-for="solution in findSolution.subSolutions"
             :key="solution.title"
@@ -32,7 +35,7 @@
             <div class="card">
               <div class="card-body">
                 <h3>{{ solution.title }}</h3>
-                <p class="card-title">
+                <p class="card-title mt-4">
                   {{ solution.description }}
                 </p>
               </div>
@@ -43,14 +46,18 @@
     </section>
 
     <section class="other-solutions container-fluid mt-5">
-      <h2>Other solutions</h2>
+      <h2
+        :class="[findSolution.subSolutions.length ? '' : 'pt-5']"
+      >
+        Other solutions
+      </h2>
       <div class="row mt-5">
         <NuxtLink
           v-for="solution in otherSolutions"
           :key="solution.title"
           :to="`/solutions/${solution.id}`"
           class="col-12 col-md-4 other-solutions-items"
-          :style="{backgroundImage:'url(' + `/img/${solution.img}` + ')'}"
+          :style="{backgroundImage:'url(' + `/img/${solution.thumbnail}` + ')'}"
         >
           <h4>{{ solution.title }}</h4>
         </NuxtLink>
@@ -70,7 +77,8 @@ export default {
     return {
       solutions,
       otherSolutions: [],
-      currentPage: this.$route.params.subSolution
+      currentPage: this.$route.params.subSolution,
+      texts: ''
     }
   },
   computed: {
@@ -84,6 +92,7 @@ export default {
       immediate: true,
       handler () {
         this.filterOtherSolutions()
+        this.getText()
       }
     }
   },
@@ -91,6 +100,9 @@ export default {
     filterOtherSolutions () {
       const result = this.solutions.filter(solution => solution.id !== this.$route.params.subSolutions)
       this.otherSolutions = result.slice(0, 3)
+    },
+    async getText () {
+      this.texts = await this.$content('solutions', this.$route.params.subSolutions).fetch()
     }
   }
 }
@@ -98,18 +110,22 @@ export default {
 
 <style lang="scss" scoped>
 .bg-hero {
-  background: linear-gradient(rgba(21, 37, 81, 0.48), rgba(21, 37, 81, 0.48)), url('/img/carmtek-solutions-header-img.jpg');
   height: 79vh;
-  background-position: bottom;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .solutions-description {
-  padding: 60px 0px;
+  padding: 60px 0px 0px 0px;
 
   .solutions-img {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 416px;
+  }
+  li {
+    font-size: 18px !important;
   }
 
   h4 {
@@ -154,7 +170,7 @@ export default {
 @media (min-width: 1000px) {
   .solutions-description {
     .container {
-      padding: 0px 90px 60px 90px;
+      padding: 0px 90px 0px 90px;
     }
   }
 }

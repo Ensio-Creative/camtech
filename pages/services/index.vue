@@ -3,7 +3,7 @@
     <div class="bg-hero">
       <div class="bg-text container">
         <h2>
-          Services
+          SCADA/IoT Services
         </h2>
       </div>
     </div>

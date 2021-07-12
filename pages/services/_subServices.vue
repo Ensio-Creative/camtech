@@ -111,6 +111,13 @@ export default {
 .services-description {
   .container {
     padding: 20px 10px;
+    article {
+      // color: var(--base-color);
+      padding-bottom: 10px;
+      p {
+        color: #fff;
+      }
+    }
   }
   .service-img {
     background-position: top;

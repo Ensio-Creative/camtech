@@ -3,7 +3,7 @@
     <div class="bg-hero">
       <div class="bg-text container">
         <h2>
-          Industry Solutions
+          Industrial Automation Solutions
         </h2>
       </div>
     </div>
@@ -14,7 +14,7 @@
             v-for="solution in solutions"
             :key="solution.title"
             class="col-12 col-md-6 solutions-item"
-            :style="{backgroundImage:'url(' + `/img/${solution.img}` + ')'}"
+            :style="{backgroundImage:'url(' + `/img/${solution.thumbnail}` + ')'}"
           >
             <div class="solutions-content">
               <h4>{{ solution.title }}</h4>

@@ -82,7 +82,7 @@ export default {
   }
   .navigation-items {
     display: flex;
-    width: 425px;
+    width: 435px;
     justify-content: space-between;
   }
   .header-container {
@@ -99,7 +99,7 @@ export default {
 }
 
 .nav-item {
-  margin: 10px 10px;
+  margin: 10px 0px;
 }
 
 .nav-item a {
