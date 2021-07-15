@@ -14,9 +14,9 @@
         </div>
       </div>
       <div class="icon icon-apple">
-        <router-link to="/">
+        <NuxtLink to="/">
           <img src="/img/carmtek-logo.svg" alt="">
-        </router-link>
+        </NuxtLink>
       </div>
       <ul
         class="menu"
@@ -27,12 +27,12 @@
           :key="links.url"
           class="menu-item"
         >
-          <router-link
+          <NuxtLink
             class="mt-3"
             :to="links.url"
           >
             {{ links.title }}
-          </router-link>
+          </NuxtLink>
         </li>
       </ul>
     </div>
@@ -220,7 +220,7 @@ body {
   width: 100%;
 }
 .window .header ul.menu li.menu-item a:active,
-.window .header ul.menu li.menu-item a.router-link-active {
+.window .header ul.menu li.menu-item a.nuxt-link-exact-active {
   color: var(--base-color);
 }
 .window .header.menu-opened {

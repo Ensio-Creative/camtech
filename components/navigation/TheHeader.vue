@@ -73,8 +73,6 @@ export default {
 
 @media (min-width: 994px) {
   .header-container {
-    // position: fixed;
-    // top: 0px;
     z-index: 1000;
     width: 100%;
     height: 88px;
@@ -112,7 +110,7 @@ export default {
 
 .nav-item a:hover,
 .nav-item a:active,
-.nav-item a.NuxtLink-active {
+.nav-item a.nuxt-link-exact-active {
   color: var(--base-color);
 }
 </style>
