@@ -3,7 +3,7 @@
     <div class="bg-hero">
       <div class="bg-text container">
         <h2>
-          Industrial Automation Solutions
+          Industrial SCADA, Telemetry/ IoT Solutions
         </h2>
       </div>
     </div>
@@ -51,7 +51,7 @@ export default {
 
 <style lang="scss" scoped>
 .bg-hero {
-  background: linear-gradient(rgba(21, 37, 81, 0.48), rgba(21, 37, 81, 0.48)), url('/img/carmtek-solutions-header-img.jpg');
+  background: linear-gradient(rgba(21, 37, 81, 0.48), rgba(21, 37, 81, 0.48)), url('/img/carmtek-industrial-SCADA-telemetry-IoT-solutions-header-img.jpg');
   height: 79vh;
   background-position: bottom;
 }

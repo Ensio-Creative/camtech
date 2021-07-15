@@ -20,7 +20,7 @@
       </div>
     </section>
 
-    <section class="service-cards">
+    <!-- <section class="service-cards">
       <div class="container">
         <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center">
           <div
@@ -39,7 +39,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <section class="other-services container-fluid mt-5">
       <h2>Other services</h2>

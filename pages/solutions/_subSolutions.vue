@@ -17,7 +17,7 @@
         <article>
           <nuxt-content :document="texts" />
         </article>
-        <div class="solutions-img mt-5" :style="{backgroundImage:'url(' + `/img/${findSolution.headerImg}` + ')'}" />
+        <div class="solutions-img mt-5" :style="{backgroundImage:'url(' + `/img/${findSolution.subImg}` + ')'}" />
       </div>
     </section>
 

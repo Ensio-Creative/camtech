@@ -58,7 +58,7 @@ export default {
 .bg-hero {
   background: linear-gradient(rgba(21, 37, 81, 0.48), rgba(21, 37, 81, 0.48)), url('/img/carmtek-services-header-img.jpg');
   height: 79vh;
-  background-position: bottom;
+  background-position: top;
 }
 .our-services{
   color: #000;

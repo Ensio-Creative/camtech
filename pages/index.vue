@@ -12,9 +12,17 @@
     <section class="positive-impact container-fluid">
       <div class="row">
         <div class="col-12 col-md-7 positive-items">
-          <h1>
-            Industrial Solutions for Remote Assets
-          </h1>
+          <div class="content">
+            <h1>
+              Industrial Solutions for Remote Assets
+            </h1>
+            <button
+              class="btn-outline-base mt-4"
+              @click="$router.push('/about-us')"
+            >
+              ABOUT US
+            </button>
+          </div>
         </div>
         <div class="col-12 col-md-5 positive-items">
           <p>
@@ -56,7 +64,7 @@
                 Industrial Automation Solutions
               </h2>
               <p>
-                We provide effective industrial remote tracking, monitoring and control solutions.
+                CARMTEK automation solutions improve asset utilization, reduce process costs, and help manage risk for better efficiency and return on investment.
               </p>
               <button
                 class="btn-outline-base"
@@ -75,7 +83,7 @@
               >
                 <div
                   class="environment-items"
-                  :style="{background:'linear-gradient(rgba(0, 0, 0, 0), rgba(21, 37, 81, 0.48)), url(' + `/img/${solution.img}` + ')'}"
+                  :style="{background:'linear-gradient(rgba(0, 0, 0, 0), rgba(21, 37, 81, 0.48)), url(' + `/img/${solution.thumbnail}` + ')'}"
                 >
                   <div class="body">
                     <h5>{{ solution.title }}</h5>
@@ -145,6 +153,11 @@ export default {
   height: 35vh;
   display: flex;
   align-items: center;
+  .content {
+    .btn-outline-base {
+      width: 149px;
+    }
+  }
 }
 
 .positive-items:last-child {
@@ -242,9 +255,11 @@ export default {
     height: 100vh;
     width: 533px;
   }
-  .positive-items h1 {
-    width: 340px;
-    margin: auto;
+  .positive-items {
+    .content {
+      width: 340px;
+      margin: auto;
+    }
   }
   .positive-items p {
     border: 1px solid var(--base-color);

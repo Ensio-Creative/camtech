@@ -11,9 +11,12 @@
       <div class="row">
         <div class="col-12 col-lg-6 who-we-are">
           <div class="content">
-            <h2>Who we are</h2>
+            <h2>Carmtek at a glance</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque accusamus minus ea, iste porro culpa sapiente voluptatem et ex nulla repellat delectus dolores! Molestiae quis quae animi laborum dolores error! ipsum dolor sit amet consectetur adipisicing elit. Culpa, impedit excepturi labore explicabo vero cumque ipsum voluptatem repellat quo, laborum neque temporibus. Vitae, nemo magni ut qui debitis perferendis dolores.
+              We're a leading provider of IoT/automation solutions to industrial operations and applications that enable an agile approach to development and innovations that create effective return on investment. We are an end-to-end company with a proven track record in building scalable infrastructure for managing automation devices at massive scale.
+            </p>
+            <p>
+              We help our clients to transform into digital businesses by unlocking the value of their physical assets and remote operations. We are committed to greatly reduce the effort and complexity that companies go through in integrating IoT/automation solutions into their operations.
             </p>
           </div>
         </div>
@@ -25,9 +28,11 @@
         <div class="col-12 col-lg-6 about-item" />
         <div class="col-12 col-lg-6 about-item">
           <div class="content">
-            <h2>Who we are</h2>
+            <h2 class="mb-4">
+              Our commitment
+            </h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque accusamus minus ea, iste porro culpa sapiente voluptatem et ex nulla repellat delectus dolores! Molestiae quis quae animi laborum dolores error! ipsum dolor sit amet consectetur adipisicing elit. Culpa, impedit excepturi labore explicabo vero cumque ipsum voluptatem repellat quo, laborum neque temporibus. Vitae, nemo magni ut qui debitis perferendis dolores.
+              We are committed to providing complete end-to-end SCADA, Telemetry/IoT solutions with specilized systems engineered for effective operation reliability and risk detection and management. We also provide support and help you make the most of our automation solutions.
             </p>
           </div>
         </div>
@@ -63,7 +68,7 @@ export default {
   }
 }
 .who-we-are:last-child {
-  background: url('/img/carmtek-about-1.jpg');
+  background: url('/img/carmtek-about-2.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -75,7 +80,7 @@ export default {
 
 .about-item {
   height: 75vh;
-  background: url('/img/carmtek-about-2.jpg');
+  background: url('/img/carmtek-about-3.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

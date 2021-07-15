@@ -26,6 +26,16 @@
   }
 }
 
+article {
+  color: var(--base-text-color);
+  h4 {
+    color: var(--base-color)
+  }
+  h5 {
+    color: var(--base-color);
+  }
+}
+
 @media (min-width: 1000px) {
   .bg-hero {
     height: 100vh;
