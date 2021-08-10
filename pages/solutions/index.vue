@@ -14,7 +14,7 @@
             v-for="solution in solutions"
             :key="solution.title"
             class="col-12 col-md-6 solutions-item"
-            :style="{backgroundImage:'url(' + `/img/${solution.thumbnail}` + ')'}"
+            :style="{backgroundImage:'linear-gradient(rgba(21, 37, 81, 0.48), rgba(21, 37, 81, 0.48)), url(' + `/img/${solution.thumbnail}` + ')'}"
           >
             <div class="solutions-content">
               <h4>{{ solution.title }}</h4>
@@ -52,12 +52,12 @@ export default {
 <style lang="scss" scoped>
 .bg-hero {
   background: linear-gradient(rgba(21, 37, 81, 0.48), rgba(21, 37, 81, 0.48)), url('/img/carmtek-industrial-SCADA-telemetry-IoT-solutions-header-img.jpg');
-  height: 79vh;
+  height: 391px;
   background-position: bottom;
 }
 
 .solutions{
-  padding: 80px 0px;
+  padding: 40px 0px;
 
   .solutions-item {
     background-position: center;
@@ -84,6 +84,9 @@ export default {
 }
 
 @media (min-width: 1000px) {
+  .bg-hero {
+    height: 79vh;
+  }
   .our-solution {
     height: 380px;
   }

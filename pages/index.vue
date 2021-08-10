@@ -150,7 +150,7 @@ export default {
 .positive-items{
   background-color: var(--base-light-color);
   color: var(--base-color);
-  height: 35vh;
+  height: 45vh;
   display: flex;
   align-items: center;
   .content {
@@ -163,13 +163,21 @@ export default {
 .positive-items:last-child {
   background-color: #fff;
   color: var(--base-text-color);
-  height: 45vh;
+  height: 65vh;
+  margin-bottom: 80px;
+  p {
+    border: 1px solid var(--base-color);
+    padding: 38px 30px 38px 30px;
+    position: relative;
+    background-color: #fff;
+    top: 13px;
+  }
 }
 
 .discover-items {
   background-color: var(--base-color);
   color: #fff;
-  height: 45vh;
+  height: 49vh;
   p {
     color: #fff;
   }
@@ -213,12 +221,15 @@ export default {
 }
 
 .environment-impact {
-  padding: 100px 0px;
+  padding: 40px 0px;
 }
 
 .environment-content {
   padding-left: 20px;
   padding-bottom: 20px;
+  h2 {
+      color: var(--base-color);
+    }
 }
 
 .reach-out {
@@ -254,6 +265,7 @@ export default {
   .positive-items:last-child{
     height: 100vh;
     width: 533px;
+    margin-bottom: 0px;
   }
   .positive-items {
     .content {
@@ -263,10 +275,12 @@ export default {
   }
   .positive-items p {
     border: 1px solid var(--base-color);
-    padding: 100px 30px 120px 30px;
+    padding: 100px 30px 120px 30px !important;
     position: relative;
     right: 195px;
+    top: 0px;
     background-color: #fff;
+
   }
 
   .discover-items {
@@ -293,15 +307,12 @@ export default {
   .bg-trailers {
     height: 80vh;
   }
-
+  .environment-impact {
+    padding: 100px 0px;
+  }
   .environment-content {
     width: 395px;
     padding: 0px !important;
-
-    h2 {
-      color: var(--base-color);
-    }
-
     p {
         padding: 40px 0px;
         font-size: 18px;

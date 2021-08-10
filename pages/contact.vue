@@ -72,9 +72,9 @@
                     Port Harcourt, Nigeria
                   </p>
                   <span>
-                    M: +234(0)909.199.6571
+                    M: +234(0)813.086.0903
                     <br>
-                    E: info@carmel-s.com
+                    E: info@carmtek.com
                   </span>
                 </div>
                 <div class="col-12 col-md-6 mt-4">
@@ -83,9 +83,9 @@
                     Lekki Phase 1, Lagos
                   </p>
                   <span>
-                    M: +234(0)909.199.6571
+                    M: +234(0)809.090.2689
                     <br>
-                    E: info@carmel-s.com
+                    E: info@carmtek.com
                   </span>
                 </div>
                 <div class="col-12 col-md-6 mt-5">
@@ -93,9 +93,9 @@
                     10 Malvern Road AYLESBURY, BUCKS HP20 1QF,England
                   </p>
                   <span>
-                    M: +234(0)909.199.6571
+                    M: +44.(0)129.658.6159
                     <br>
-                    E: info@carmel-s.com
+                    E: uk@carmtek.com
                   </span>
                 </div>
               </div>
@@ -130,7 +130,7 @@ export default {
 <style lang="scss" scoped>
 .bg-hero {
   background: linear-gradient(rgba(21, 37, 81, 0.48), rgba(21, 37, 81, 0.48)), url('/img/carmtek-contact-header-img.jpg');
-  height: 79vh;
+  height: 391px;
   background-position: center;
 }
 .contact-info {
@@ -166,6 +166,9 @@ export default {
   }
 }
 @media (min-width: 1000px) {
+  .bg-hero {
+    height: 79vh;
+  }
   .container-fluid {
     height: 168vh;
   }

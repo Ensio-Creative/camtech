@@ -25,8 +25,8 @@
     </section>
     <section class="container about-container">
       <div class="row">
-        <div class="col-12 col-lg-6 about-item" />
-        <div class="col-12 col-lg-6 about-item">
+        <div class="col-12 col-lg-6 about-item order-6 order-sm-2" />
+        <div class="col-12 col-lg-6 about-item order-2 order-sm-6">
           <div class="content">
             <h2 class="mb-4">
               Our commitment
@@ -55,14 +55,19 @@ export default {
 .bg-hero {
   background: linear-gradient(rgba(21, 37, 81, 0.48), rgba(21, 37, 81, 0.48)), url('/img/carmtek-about-header-img.jpg');
   background-position: center;
-  height: 75vh;
-  margin-bottom: 99px;
+  height: 391px;
 }
 .who-container {
-  margin-bottom: 99px;
+  padding: 80px 0px;
+  .content {
+    h2 {
+      width: 307px;
+      margin-bottom: 10px;
+    }
+  }
 }
 .who-we-are {
-  height: 75vh;
+  height: 96vh;
   h2 {
     color: var(--base-color);
   }
@@ -72,30 +77,44 @@ export default {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  height: 40vh;
 }
 
 .about-container {
-  margin-bottom: 99px;
+  margin-bottom: 70px;
 }
 
 .about-item {
-  height: 75vh;
+  height: 40vh;
   background: url('/img/carmtek-about-3.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 .about-item:last-child {
+  height: 56vh;
   background: var(--base-color);
   display: flex;
   align-items: center;
   p {
     color: #fff;
   }
+   h2 {
+      color: #fff;
+    }
 }
 
 @media (min-width: 1000px) {
+  .bg-hero {
+    height: 75vh;
+  }
+  .who-container {
+    h2 {
+      width: 100%;
+    }
+  }
   .who-we-are {
+    height: 80vh;
     .content {
       margin-top: 10px;
       p {
@@ -103,13 +122,17 @@ export default {
       }
     }
   }
+  .who-we-are:last-child {
+    height: 80vh;
+  }
+  .about-item {
+    height: 80vh;
+  }
   .about-item:last-child {
-  .content {
-    padding: 30px;
+    height: 80vh;
+    .content {
+      padding: 30px;
+    }
   }
-  h2 {
-    color: #fff;
-  }
-}
 }
 </style>

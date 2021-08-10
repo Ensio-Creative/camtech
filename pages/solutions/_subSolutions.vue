@@ -57,7 +57,7 @@
           :key="solution.title"
           :to="`/solutions/${solution.id}`"
           class="col-12 col-md-4 other-solutions-items"
-          :style="{backgroundImage:'url(' + `/img/${solution.thumbnail}` + ')'}"
+          :style="{backgroundImage:'linear-gradient(rgba(21, 37, 81, 0.48), rgba(21, 37, 81, 0.48)), url(' + `/img/${solution.thumbnail}` + ')'}"
         >
           <h4>{{ solution.title }}</h4>
         </NuxtLink>
@@ -110,7 +110,7 @@ export default {
 
 <style lang="scss" scoped>
 .bg-hero {
-  height: 79vh;
+  height: 391px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -163,11 +163,15 @@ export default {
       h4 {
         font-family: var(--header-font);
         padding-bottom: 20px;
+        width: 401px;
       }
     }
   }
 
 @media (min-width: 1000px) {
+  .bg-hero {
+    height: 79vh;
+  }
   .solutions-description {
     .container {
       padding: 0px 90px 0px 90px;

@@ -57,7 +57,7 @@ export default {
 <style lang="scss" scoped>
 .bg-hero {
   background: linear-gradient(rgba(21, 37, 81, 0.48), rgba(21, 37, 81, 0.48)), url('/img/carmtek-services-header-img.jpg');
-  height: 79vh;
+  height: 391px;
   background-position: top;
 }
 .our-services{
@@ -102,6 +102,9 @@ export default {
 }
 
 @media (min-width: 1000px) {
+  .bg-hero {
+    height: 79vh;
+  }
   .our-services {
     padding: 112px 0px;
     p {

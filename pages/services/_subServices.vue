@@ -12,7 +12,7 @@
       </div>
     </div>
     <section class="services-description">
-      <div class="container">
+      <div class="container mt-4">
         <article>
           <nuxt-content :document="texts" />
         </article>
@@ -49,7 +49,7 @@
           :key="service.title"
           :to="`/services/${service.id}`"
           class="col-12 col-md-4 other-services-items"
-          :style="{backgroundImage:'url(' + `/img/${service.imgThumbnail}` + ')'}"
+          :style="{backgroundImage:'linear-gradient(rgba(21, 37, 81, 0.48), rgba(21, 37, 81, 0.48)), url(' + `/img/${service.imgThumbnail}` + ')'}"
         >
           <h4>{{ service.title }}</h4>
         </NuxtLink>
@@ -103,7 +103,7 @@ export default {
 
 <style lang="scss" scoped>
 .bg-hero {
-  height: 79vh;
+  height: 319px;
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -154,11 +154,15 @@ export default {
       h4 {
         font-family: var(--header-font);
         padding-bottom: 20px;
+        width: 401px;
       }
     }
   }
 
 @media (min-width: 1000px) {
+  .bg-hero {
+    height: 79vh;
+  }
   .services-description {
     .container {
       padding: 88px 0px 10px 0px;
