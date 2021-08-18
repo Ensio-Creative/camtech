@@ -4,7 +4,7 @@
       <div class="bg-text container">
         <h2>
           Industrial leader in
-          Wireless SCADA/IoT and
+          Cloud Based SCADA/IoT and
           Automation Solutions
         </h2>
       </div>
@@ -37,10 +37,10 @@
         <div class="col-12 col-md-6 discover-items">
           <div class="discover-content">
             <h2>
-              End-to-End SCADA/IoT Services
+              End-to-End Cloud Based SCADA/IoT Services
             </h2>
             <p>
-              We provide an End-to-End SCADA/IoT services with specilized systems that minimize downtime and maximize operation output.
+              We provide an End-to-End Cloud Based SCADA/IoT services with specilized systems that minimize downtime and maximize operation output.
             </p>
             <button
               class="btn-base-outline-white"
@@ -142,6 +142,18 @@ export default {
       solutions
     }
   }
+  // head () {
+  //   return {
+  //     title: 'CARMTEK',
+  //     meta: [
+  //       {
+  //         hid: 'Services',
+  //         name: 'CARMTEK SERVICES',
+  //         content: 'Services'
+  //       }
+  //     ]
+  //   }
+  // }
 }
 </script>
 
@@ -154,6 +166,9 @@ export default {
   display: flex;
   align-items: center;
   .content {
+    h1 {
+      font-size: 32px;
+    }
     .btn-outline-base {
       width: 149px;
     }
@@ -170,14 +185,14 @@ export default {
     padding: 38px 30px 38px 30px;
     position: relative;
     background-color: #fff;
-    top: 13px;
+    top: -11px;
   }
 }
 
 .discover-items {
   background-color: var(--base-color);
   color: #fff;
-  height: 49vh;
+  height: 58vh;
   p {
     color: #fff;
   }
@@ -261,6 +276,11 @@ export default {
   }
   .positive-items{
     height: 100vh;
+    .content {
+      h1 {
+        font-size: 2.5rem;
+      }
+    }
   }
   .positive-items:last-child{
     height: 100vh;
@@ -293,7 +313,7 @@ export default {
       margin: auto;
 
       h2 {
-        width: 220px;
+        width: 401px;
       }
 
       p {

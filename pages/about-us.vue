@@ -11,9 +11,9 @@
       <div class="row">
         <div class="col-12 col-lg-6 who-we-are">
           <div class="content">
-            <h2>Carmtek at a glance</h2>
+            <h2>CARMTEK at a glance</h2>
             <p>
-              We're a leading provider of IoT/automation solutions to industrial operations and applications that enable an agile approach to development and innovations that create effective return on investment. We are an end-to-end company with a proven track record in building scalable infrastructure for managing automation devices at massive scale.
+              We're a leading provider of Cloud Based SCADA and IoT/automation solutions to industrial operations and applications that enable an agile approach to development and innovations that create effective return on investment. We are an end-to-end company with a proven track record in building scalable infrastructure for managing automation devices at massive scale.
             </p>
             <p>
               We help our clients to transform into digital businesses by unlocking the value of their physical assets and remote operations. We are committed to greatly reduce the effort and complexity that companies go through in integrating IoT/automation solutions into their operations.
@@ -32,7 +32,7 @@
               Our commitment
             </h2>
             <p>
-              We are committed to providing complete end-to-end SCADA, Telemetry/IoT solutions with specilized systems engineered for effective operation reliability and risk detection and management. We also provide support and help you make the most of our automation solutions.
+              We are committed to providing complete end-to-end Cloud Based SCADA, Telemetry/IoT solutions with specilized systems engineered for effective operation reliability and risk detection and management. We also provide support and help you make the most of our automation solutions.
             </p>
           </div>
         </div>
@@ -47,7 +47,19 @@
 import Footer from '~/components/common/Footer.vue'
 export default {
   name: 'About',
-  components: { Footer }
+  components: { Footer },
+  head () {
+    return {
+      title: 'About us - CARMTEK ',
+      meta: [
+        {
+          hid: 'About us',
+          name: 'About us CARMTEK',
+          content: 'About us'
+        }
+      ]
+    }
+  }
 }
 </script>
 
@@ -58,16 +70,24 @@ export default {
   height: 391px;
 }
 .who-container {
-  padding: 80px 0px;
+  // padding: 80px 0px;
+  .row {
+    padding: 15px;
+  }
+  padding-top: 40px;
+  padding-bottom: 40px;
   .content {
     h2 {
-      width: 307px;
+      width: 300px;
       margin-bottom: 10px;
     }
   }
 }
 .who-we-are {
   height: 96vh;
+  .row {
+    padding: 15px;
+  }
   h2 {
     color: var(--base-color);
   }
@@ -78,6 +98,7 @@ export default {
   background-size: cover;
   background-position: center;
   height: 40vh;
+  margin-top: 40px;
 }
 
 .about-container {
@@ -109,8 +130,10 @@ export default {
     height: 75vh;
   }
   .who-container {
-    h2 {
-      width: 100%;
+    .content {
+      h2 {
+        width: 360px;
+      }
     }
   }
   .who-we-are {
@@ -124,6 +147,7 @@ export default {
   }
   .who-we-are:last-child {
     height: 80vh;
+    margin-top: 0px;
   }
   .about-item {
     height: 80vh;
@@ -133,6 +157,9 @@ export default {
     .content {
       padding: 30px;
     }
+  }
+  .who-we-are .content {
+    width: 501px;
   }
 }
 </style>

@@ -15,7 +15,7 @@
       </div>
       <div class="icon icon-apple">
         <NuxtLink to="/">
-          <img src="/img/carmtek-logo.svg" alt="">
+          <img src="/img/carmtek-logo.png" alt="">
         </NuxtLink>
       </div>
       <ul

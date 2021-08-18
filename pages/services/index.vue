@@ -3,7 +3,7 @@
     <div class="bg-hero">
       <div class="bg-text container">
         <h2>
-          SCADA/IoT Services
+          Cloud Based SCADA/IoT Services
         </h2>
       </div>
     </div>
@@ -11,7 +11,7 @@
     <section class="our-services">
       <div class="container our-service-text">
         <p>
-          We provide SCADA (Supervisory Control and Data Acquisition) communication technology services for remote control, monitor, store and display accross different sectors which include Oil & Gas, Power Generation and Distribution, Mining, Manufacturing and Water Systems. With years of experience in industrial automation and our team of experienced engineers, we provide top notch services with best of industry standards.
+          We provide Cloud Based SCADA (Supervisory Control and Data Acquisition) communication technology services for remote control, monitor, store and display accross different sectors which include Oil & Gas, Power Generation and Distribution, Mining, Manufacturing and Water Systems. With years of experience in industrial automation and our team of experienced engineers, we provide top notch services with best of industry standards.
         </p>
       </div>
     </section>
@@ -49,6 +49,18 @@ export default {
   data () {
     return {
       services
+    }
+  },
+  head () {
+    return {
+      title: 'Services - CARMTEK',
+      meta: [
+        {
+          hid: 'Services',
+          name: 'SERVICES CARMTEK',
+          content: 'Services'
+        }
+      ]
     }
   }
 }

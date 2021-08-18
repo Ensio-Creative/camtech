@@ -123,6 +123,18 @@ export default {
       message: '',
       errorMessage: ''
     }
+  },
+  head () {
+    return {
+      title: 'Contact - CARMTEK',
+      meta: [
+        {
+          hid: 'Contact',
+          name: 'Contact CARMTEK',
+          content: 'Contact'
+        }
+      ]
+    }
   }
 }
 </script>
@@ -143,7 +155,7 @@ export default {
   }
   .contact-first-half{
     background-color: #fff;
-    padding: 40px;
+    padding: 0px;
     .row {
       border-top: 2px solid var(--base-text-color);
     }
@@ -154,7 +166,7 @@ export default {
   .form-half{
     background-color:  #fff;
     form {
-      padding: 10px 50px;
+      padding: 10px 0px;
       color: #000;
       button{
         width: 100%;

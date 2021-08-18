@@ -1,11 +1,11 @@
 <template>
   <div class="footer">
     <div class="footer-img container">
-      <img src="/img/carmtek-logo-white.svg" alt="">
+      <img src="/img/carmtek-logo-white.png" alt="">
     </div>
     <hr>
     <div class="privacy container">
-      <span class="privacy-item">&copy; {{ date.getFullYear() }} Carmtek. All rights reserved.</span>
+      <span class="privacy-item">&copy; {{ date.getFullYear() }} CARMTEK. All rights reserved.</span>
       <span class="privacy-item">Site Credit: <strong> <a href="https://ensiocreative.com" target="_blank"> Ensio Creative</a> </strong></span>
     </div>
   </div>
@@ -34,7 +34,7 @@ export default {
     text-align: center;
   }
   .footer-img img {
-    width: 300px;
+    width: 200px;
   }
   hr {
     background: #fff;

@@ -46,7 +46,7 @@ export default [
     thumbnail: 'carmtek-satSCADA-remote-vibration-monitoring.jpg',
     headerImg: 'carmtek-satSCADA-remote-vibration-monitoring-header-img.jpg',
     subImg: 'carmtek-satSCADA-remote-vibration-monitoring-1.svg',
-    title: 'CARMTEK SatSCADA Remote Vibration Monitoring',
+    title: 'CARMTEK Remote Vibration Monitoring',
     subSolutions: []
   },
   {

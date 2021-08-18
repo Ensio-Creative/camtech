@@ -1,11 +1,5 @@
 export default [
   {
-    id: '356543jjre',
-    imgThumbnail: 'carmtek-panel-fabrication.jpg',
-    headerImg: 'carmtek-panel-fabrication-header-img.jpg',
-    title: 'Panel Fabrication'
-  },
-  {
     id: '355443jjre',
     imgThumbnail: 'carmtek-maintenance-and-troubleshooting.jpg',
     headerImg: 'carmtek-maintenance-and-troubleshooting-header-img.jpg',
@@ -39,7 +33,7 @@ export default [
     id: '356543jjew',
     imgThumbnail: 'carmtek-SCADA-hosting.jpg',
     headerImg: 'carmtek-SCADA-hosting-header-img.jpg',
-    title: 'SCADA Hosting'
+    title: 'Cloud Based SCADA Hosting'
   },
   {
     id: '456543jjre',
@@ -49,8 +43,8 @@ export default [
   },
   {
     id: '356343jjre',
-    imgThumbnail: 'carmtek-SCADALink-airtime-provisioning.jpg',
-    headerImg: 'carmtek-SCADALink-airtime-provisioning-header-img.jpg',
-    title: 'SCADALink Airtime Provisioning'
+    imgThumbnail: 'carmtek-satellite-airtime-provisioning.jpg',
+    headerImg: 'carmtek-satellite-airtime-provisioning-header-img.jpg',
+    title: 'CARMTEK Satellite Airtime Provisioning'
   }
 ]

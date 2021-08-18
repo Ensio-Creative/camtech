@@ -16,7 +16,7 @@
         <article>
           <nuxt-content :document="texts" />
         </article>
-        <div class="service-img" :style="{backgroundImage:'url(' + `/img/${findService.headerImg}` + ')'}" />
+        <!-- <div class="service-img" :style="{backgroundImage:'url(' + `/img/${findService.headerImg}` + ')'}" /> -->
       </div>
     </section>
 

@@ -3,7 +3,7 @@
     <div class="bg-hero">
       <div class="bg-text container">
         <h2>
-          Industrial SCADA, Telemetry/ IoT Solutions
+          Industrial Cloud Based SCADA, Telemetry/ IoT Solutions
         </h2>
       </div>
     </div>
@@ -45,6 +45,18 @@ export default {
       info: '',
       solutions
     }
+  },
+  head () {
+    return {
+      title: 'Solutions - CARMTEK',
+      meta: [
+        {
+          hid: 'Solutions',
+          name: 'Solutions CARMTEK',
+          content: 'Solutions'
+        }
+      ]
+    }
   }
 }
 </script>
@@ -58,7 +70,9 @@ export default {
 
 .solutions{
   padding: 40px 0px;
-
+  .row {
+    padding: 15px;
+  }
   .solutions-item {
     background-position: center;
     background-repeat: no-repeat;
