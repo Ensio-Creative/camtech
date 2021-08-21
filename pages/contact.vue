@@ -50,7 +50,7 @@
                     />
                   </div>
                   <button
-                    class="btn-base mb-4 mt-2"
+                    class="btn-base  mb-4 mt-2"
                     type="submit"
                   >
                     SEND MESSAGE
@@ -65,6 +65,7 @@
                   <h2>Contacts</h2>
                 </div>
                 <div class="col-12 col-md-6 mt-4">
+                  <h5>PORT HARCOURT</h5>
                   <p>
                     Plot 385 Prof. Okujagu Street,
                     Off Peter Odili Road,
@@ -78,6 +79,7 @@
                   </span>
                 </div>
                 <div class="col-12 col-md-6 mt-4">
+                  <h5>LAGOS</h5>
                   <p>
                     1B Alh. Hussein Sunmonu St.,
                     Lekki Phase 1, Lagos
@@ -89,6 +91,7 @@
                   </span>
                 </div>
                 <div class="col-12 col-md-6 mt-5">
+                  <h5>UNITED KINGDOM</h5>
                   <p>
                     10 Malvern Road AYLESBURY, BUCKS HP20 1QF,England
                   </p>
@@ -169,7 +172,8 @@ export default {
       padding: 10px 0px;
       color: #000;
       button{
-        width: 100%;
+        width: 221px;
+        margin: auto;
       }
       span {
         color: var(--base-color);

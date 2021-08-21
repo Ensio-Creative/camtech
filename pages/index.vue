@@ -40,7 +40,7 @@
               End-to-End Cloud Based SCADA/IoT Services
             </h2>
             <p>
-              We provide an End-to-End Cloud Based SCADA/IoT services with specilized systems that minimize downtime and maximize operation output.
+              We provide an End-to-End Cloud Based SCADA/IoT services with specialized systems that minimize downtime and maximize operation output.
             </p>
             <button
               class="btn-base-outline-white"
@@ -185,7 +185,7 @@ export default {
     padding: 38px 30px 38px 30px;
     position: relative;
     background-color: #fff;
-    top: -11px;
+    top: -27px;
   }
 }
 
@@ -220,7 +220,7 @@ export default {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 30vh;
+  height: 50vh;
   color: #fff;
   border-radius: 0px;
   border: 0px;

@@ -32,7 +32,7 @@
               Our commitment
             </h2>
             <p>
-              We are committed to providing complete end-to-end Cloud Based SCADA, Telemetry/IoT solutions with specilized systems engineered for effective operation reliability and risk detection and management. We also provide support and help you make the most of our automation solutions.
+              We are committed to providing complete end-to-end Cloud Based SCADA, Telemetry/IoT solutions with specialized systems engineered for effective operation reliability and risk detection and management. We also provide support and help you make the most of our automation solutions.
             </p>
           </div>
         </div>
