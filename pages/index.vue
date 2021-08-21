@@ -179,7 +179,7 @@ export default {
   background-color: #fff;
   color: var(--base-text-color);
   height: 65vh;
-  margin-bottom: 80px;
+  margin-bottom: 25px;
   p {
     border: 1px solid var(--base-color);
     padding: 38px 30px 38px 30px;
