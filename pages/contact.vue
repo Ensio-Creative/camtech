@@ -155,6 +155,7 @@ export default {
     font-weight: bold;
     border-bottom: 1px solid #f2f2f2;
     padding-bottom: 22px;
+    color: var(--base-color);
   }
   .contact-first-half{
     background-color: #fff;

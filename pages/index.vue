@@ -118,7 +118,7 @@
             Reach out for complete service or technical support. We are here to help you.
           </p>
           <button
-            class="btn-base-outline-white"
+            class="btn-outline-base"
             @click="$router.push('/contact')"
           >
             CONTACT US
@@ -248,14 +248,14 @@ export default {
 }
 
 .reach-out {
-  height: 30vh;
+  height: 45vh;
   background-image: url('/img/carmtek-footer-contact.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 
   .reach-container {
-    height: 30vh;
+    height: 45vh;
     color: #fff;
     background: rgba(0, 0, 0, 0.6);
     padding: 20px;
