@@ -18,7 +18,7 @@ export default {
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/carmtek-favicon.svg' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.svg' }
     ]
   },
 
