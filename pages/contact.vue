@@ -166,6 +166,9 @@ export default {
     h4 {
       padding: 10px 0px 0px 0px;
     }
+    h5 {
+      font-weight: bold;
+    }
   }
   .form-half{
     background-color:  #fff;

@@ -50,7 +50,7 @@ export default {
   components: { Footer },
   head () {
     return {
-      title: 'About us - CARMTEK ',
+      title: 'About us - CARMTEK',
       meta: [
         {
           hid: 'About us',
