@@ -1,3 +1,6 @@
+/* eslint-disable curly */
+/* eslint-disable no-return-assign */
+/* eslint-disable no-return-assign */
 <template>
   <div>
     <div class="bg-hero">
@@ -15,6 +18,7 @@
             <div class="col-12 form-half">
               <form @submit.prevent="onSubmit">
                 <h2>Get in touch</h2>
+                <h5>{{ errorMsg }}</h5>
                 <div class="row">
                   <div class="col-12">
                     <AppControlInput
@@ -23,7 +27,6 @@
                       required
                       placeholder="Name"
                     />
-                    <p>{{ fullName }}</p>
                   </div>
                   <div class="col-12">
                     <AppControlInput
@@ -55,7 +58,6 @@
                   >
                     SEND MESSAGE
                   </button>
-                  <span>{{ errorMessage }}</span>
                 </div>
               </form>
             </div>
@@ -124,7 +126,7 @@ export default {
       company: '',
       email: '',
       message: '',
-      errorMessage: ''
+      errorMsg: ''
     }
   },
   head () {
@@ -137,6 +139,57 @@ export default {
           content: 'Contact'
         }
       ]
+    }
+  },
+  methods: {
+    async onSubmit  () {
+      const errorText = 'Fill every filed'
+      if (!this.fullName) {
+        this.errorMsg = errorText
+        return this.errorMsg
+      }
+      if (!this.company) {
+        this.errorMsg = errorText
+        return this.errorMsg
+      }
+      if (!this.email) {
+        this.errorMsg = errorText
+        return this.errorMsg
+      }
+      if (!this.validEmail(this.email)) {
+        this.errorMsg = 'Add a valid email'
+        return this.errorMsg
+      }
+      if (!this.message) {
+        this.errorMsg = errorText
+        return this.errorMsg
+      }
+      const data = {
+        name: this.name,
+        company: this.company,
+        email: this.email,
+        message: this.message
+      }
+      const response = await fetch('https://formsubmit.co/ajax/info@gandtconstruction.co.uk', {
+        method: 'POST', // *GET, POST, PUT, DELETE, etc.
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data) // body data type must match "Content-Type" header
+      })
+      // return response.json();
+      if (response.status === 200) {
+        this.errorMsg = 'Message sent'
+        return this.errorMsg
+      }
+      if (response.status !== 200) {
+        this.errorMsg = 'Something went wrong'
+        return this.errorMsg
+      }
+    },
+    validEmail (email) {
+      const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+      return re.test(email)
     }
   }
 }
