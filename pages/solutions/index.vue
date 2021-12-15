@@ -48,11 +48,11 @@ export default {
   },
   head () {
     return {
-      title: 'Solutions - CARMTEK',
+      title: 'Solutions - CARMTEK Solutions',
       meta: [
         {
           hid: 'Solutions',
-          name: 'Solutions CARMTEK',
+          name: 'Solutions CARMTEK Solutions',
           content: 'Solutions'
         }
       ]

@@ -129,11 +129,11 @@ export default {
   },
   head () {
     return {
-      title: 'Contact - CARMTEK',
+      title: 'Contact - CARMTEK Solutions',
       meta: [
         {
           hid: 'Contact',
-          name: 'Contact CARMTEK',
+          name: 'Contact CARMTEK Solutions',
           content: 'Contact'
         }
       ]
