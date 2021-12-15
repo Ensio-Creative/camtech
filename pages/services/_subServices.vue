@@ -115,7 +115,7 @@ export default {
       // color: var(--base-color);
       padding-bottom: 10px;
       p {
-        color: #fff;
+        color: #666;
       }
     }
   }
