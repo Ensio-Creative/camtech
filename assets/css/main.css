@@ -1,10 +1,5 @@
 @import url("https://use.typekit.net/jwy6fsp.css");
 
-@font-face{
-  font-family:"BwGradualDEMO-ExtraBoldItalic";
-  src: local("BwGradualDEMO-ExtraBoldItalic"),
-  url(../css/fonts/BwGradualDEMO-ExtraBold.otf) format("truetype");
-}
 
 :root {
   --main-font:  'muli', sans-serif;

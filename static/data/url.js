@@ -1,14 +1,10 @@
 export default [
   {
-    title: 'HOME',
-    url: '/'
-  },
-  {
     title: 'ABOUT US',
     url: '/about-us'
   },
   {
-    title: 'SERVICES',
+    title: 'OUR SERVICES',
     url: '/services'
   },
   {
@@ -16,7 +12,7 @@ export default [
     url: '/solutions'
   },
   {
-    title: 'CONTACT US',
+    title: 'CONTACT',
     url: '/contact'
   }
 ]

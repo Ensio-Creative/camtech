@@ -1,3 +1,13 @@
+@font-face{
+  font-family:"Campton";
+  src: local("Campton"),
+  url(../css/fonts/Campton-LightDEMO.otf) format("truetype");
+}
+
+$font-campton: 'Campton';
+$white: #fff;
+$dark: #000;
+$theme-dark: #0E1E43;
 .bg-hero {
   display: flex;
   background: linear-gradient(rgba(21, 37, 81, 0.48), rgba(21, 37, 81, 0.48)), url('/img/carmtek-hero.jpg');
@@ -9,10 +19,6 @@
   .bg-text {
     color: #fff;
     align-self: center;
-
-    // h2 {
-    //   font-famil
-    // }
 
     .btn-base {
       width: 175px;
@@ -50,3 +56,5 @@ article {
   }
 
 }
+
+@import 'components/header';
