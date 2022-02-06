@@ -33,8 +33,8 @@
               to="/services"
             >
               OUR SERVICES
-              <img v-if="view.topOfPage" src="/img/nav-arrow-white.svg" alt="">
-              <img v-else src="/img/nav-arrow-dark.svg" alt="">
+              <img v-if="view.topOfPage" class="nav-link-img" src="/img/nav-arrow-white.svg" alt="">
+              <img v-else class="nav-link-img" src="/img/nav-arrow-dark.svg" alt="">
             </NuxtLink>
             <DropDown
               style="left: -95px; top: 30px;"
@@ -48,8 +48,8 @@
               to="/solutions"
             >
               SOLUTIONS
-              <img v-if="view.topOfPage" src="/img/nav-arrow-white.svg" alt="">
-              <img v-else src="/img/nav-arrow-dark.svg" alt="">
+              <img v-if="view.topOfPage" class="nav-link-img" src="/img/nav-arrow-white.svg" alt="">
+              <img v-else class="nav-link-img" src="/img/nav-arrow-dark.svg" alt="">
             </NuxtLink>
             <DropDown
               style="left: -95px; top: 30px;"

@@ -7,6 +7,7 @@
   z-index: 1000;
   background-color: $white;
   border-radius: 20px;
+  transition: 0.5s;
   ul {
     list-style: none;
     padding-left: 30px;
@@ -30,9 +31,26 @@
     }
   }
 }
+.drop-link {
+  transition: 0.4s;
+  opacity: 0.3;
+}
+
 .dropdown:hover .drop-link {
   display: block;
+  transition: 0.2s;
+  opacity: 1;
 }
+
+.dropdown .nav-link-img {
+  transition: 0.4s;
+}
+
+.dropdown:hover .nav-link-img {
+  transition: 0.3s;
+  transform: rotate(-179deg);
+}
+
 
 .header-container {
   position: fixed;

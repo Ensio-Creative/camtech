@@ -117,12 +117,14 @@
           <p>
             Reach out for complete service or technical support. We are here to help you.
           </p>
-          <button
-            class="btn-outline-base"
-            @click="$router.push('/contact')"
-          >
-            CONTACT US
+          <button @click="open = !open">
+            Toggle Animation
           </button>
+          <transition name="fade">
+            <p v-if="open" class="example-div">
+              Hello World
+            </p>
+          </transition>
         </div>
       </div>
     </section>
@@ -139,7 +141,8 @@ export default {
   components: { Footer },
   data () {
     return {
-      solutions
+      solutions,
+      open: true
     }
   }
   // head () {
@@ -158,6 +161,15 @@ export default {
 </script>
 
 <style lang="scss">
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
 
 .positive-items{
   background-color: var(--base-light-color);
