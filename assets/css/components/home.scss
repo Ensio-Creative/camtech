@@ -1,0 +1,162 @@
+
+.home {
+  .bg-hero {
+    .red-line {
+      // margin-top: 10px;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.end-end {
+  padding-top: 90px;
+  padding-bottom: 90px;
+  .red-line {
+    margin: auto;
+  }
+  .end-text {
+    margin: auto;
+    h2 {
+      color: $theme-dark;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      font-family: $font-campton-bold;
+    }
+    p {
+      color: $them-gray;
+      text-align: center;
+    }
+  }
+}
+
+.home-about {
+  background: linear-gradient(rgba(21, 37, 81, 0.48), rgba(21, 37, 81, 0.48)), url('/img/carmtek-bg-image.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 568px;
+  color: $white;
+  display: flex;
+  align-items: center;
+  .container {
+    padding-top: 30px;
+    h5 {
+      font-family: $font-campton-bold;
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+    p {
+      padding-bottom: 20px;
+    }
+  }
+}
+
+.home-solutions {
+  background-color: $white;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  color: $them-gray;
+  .solution-item {
+    h5 {
+      color: $theme-dark;
+      font-family: $font-campton-bold;
+      padding-top: 20px;
+    }
+    h3 {
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+    p {
+      padding-bottom: 10px;
+    }
+  }
+  .solution-item:last-child {
+    a {
+      color: $theme-dark;
+    }
+
+    h6{
+      font-family: $font-campton-bold;
+      color: $theme-dark;
+      margin-top: 20px;
+    }
+
+    img {
+      width: 19px;
+    }
+
+    .solution-link {
+      border: 1px solid #989898;
+      padding: 50px;
+      width: 345px;
+      margin-top: 30px;
+      .img-header {
+        padding: 120px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  .end-end {
+    .end-text {
+      h2 {
+        width: 751px;
+        margin: auto;
+      }
+      p {
+        width: 406px;
+        margin: auto;
+      }
+    }
+  }
+
+  .home-about {
+    height: 800px;
+    .container {
+      display: flex;
+      justify-content: end;
+      .about-content {
+        width: 550px;
+        h3 {
+          width: 300px;
+        }
+        p {
+          width: 339px;
+          padding-bottom: 20px;
+        }
+      }
+    }
+  }
+
+  .home-solutions {
+    .solution-item {
+      h3 {
+        width: 400px;
+      }
+      p {
+        width: 353px;
+      }
+    }
+    .solution-item:last-child {
+      display: flex;
+      justify-content: space-between;
+      a {
+        color: $theme-dark;
+      }
+  
+      h6{
+        width: 190px;
+        padding-top: 25px;
+        padding-bottom: 20px;
+      }
+  
+      .solution-link {
+        padding: 35px;
+        width: 345px;
+      }
+    }
+  }
+}

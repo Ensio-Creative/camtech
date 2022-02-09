@@ -1,79 +1,70 @@
 <template>
   <div class="footer">
-    <div class="footer-img container">
-      <img src="/img/carmtek-logo-white.png" alt="">
+    <div class="footer-link container">
+      <div class="link-item">
+        <NuxtLink
+          v-for="route in routes"
+          :key="route.url"
+          :to="route.url"
+        >
+          {{ route.title }}
+        </NuxtLink>
+      </div>
+      <div class="link-item">
+        <div class="content-social">
+          <div class="social-item">
+            <a href="https://business.facebook.com/Integrity-Projects-Limited-110559268204169/" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-facebook-f" />
+            </a>
+          </div>
+          <div class="social-item">
+            <a
+              href="https://www.linkedin.com/company/integrity-projects-limited-biz"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fab fa-twitter" />
+            </a>
+          </div>
+          <div class="social-item">
+            <a
+              href="https://www.linkedin.com/company/integrity-projects-limited-biz"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fab fa-instagram" />
+            </a>
+          </div>
+          <div class="social-item">
+            <a
+              href="https://www.linkedin.com/company/integrity-projects-limited-biz"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fab fa-linkedin-in" />
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
     <hr>
     <div class="privacy container">
-      <span class="privacy-item">&copy; {{ date.getFullYear() }} CARMTEK Solutions. All rights reserved.</span>
-      <span class="privacy-item">Site Credit: <strong> <a href="https://ensiocreative.com" target="_blank"> Ensio Creative</a> </strong></span>
+      <span class="privacy-item">Copyright &copy; {{ date.getFullYear() }} CARMTEK. All Rights Reserved.</span>
+      <span class="privacy-item">Web Design: <strong> <a href="https://ensiocreative.com" target="_blank"> Ensio Creative</a> </strong></span>
     </div>
   </div>
 </template>
 
 <script>
-// import routes from '@/data/url.js'
+import routes from '~/static/data/url.js'
 export default {
   name: 'Footer',
   data () {
     return {
       footer: '',
-      date: new Date()
-      // routes
+      date: new Date(),
+      routes
     }
   }
 }
 </script>
-
-<style lang="scss" scoped>
-.footer {
-  background-color: var(--base-color);
-  padding: 40px 0px 60px 0px;
-
-  .footer-img {
-    text-align: center;
-  }
-  .footer-img img {
-    width: 200px;
-  }
-  hr {
-    background: #fff;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    opacity: 0.4;
-  }
-  .privacy {
-    margin-top: 20px;
-    text-align: center;
-    color: #fff;
-
-    .privacy-item{
-      display: block;
-      font-size: 12px;
-      color: #fff;
-    }
-
-    a{
-      margin-right: 10px;
-    }
-  }
-}
-@media (min-width: 1000px) {
-  .footer-img {
-    text-align: left !important;
-  }
-  .footer-img img {
-    width: 220px !important;
-  }
-  .footer .privacy .privacy-item {
-    display: inline;
-    padding-right: 20px;
-    float: left;
-  }
-  .footer .privacy .privacy-item:last-child {
-    display: inline;
-    padding-right: 20px;
-    float: right;
-  }
-}
-</style>

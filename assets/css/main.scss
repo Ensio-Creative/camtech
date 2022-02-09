@@ -11,33 +11,56 @@
 @font-face{
   font-family:"Campton";
   src: local("Campton"),
-  url(../css/fonts/Campton-LightDEMO.otf) format("truetype");
+  url(../css/fonts/CamptonLight.otf) format("truetype");
+}
+
+@font-face{
+  font-family:"CamptonBold";
+  src: local("Campton"),
+  url(../css/fonts/CamptonBold.otf) format("truetype");
 }
 
 $font-campton: 'Campton';
+$font-campton-bold: 'CamptonBold';
 $white: #fff;
 $dark: #000;
 $theme-dark: #0E1E43;
+$line-red: #FF0707;
+$theme-red: #EE3C24;
+$them-gray: #666D80;
+
+body {
+  font-family: $font-campton;
+}
+
+.btn-base {
+  width: 175px;
+  height: 45px;
+  background-color: $theme-red;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  border: 0px;
+  img {
+    width: 30px;
+    padding-left: 10px;
+  }
+}
+
 .bg-hero {
   display: flex;
-  background: linear-gradient(rgba(21, 37, 81, 0.48), rgba(21, 37, 81, 0.48)), url('/img/carmtek-hero.jpg');
+  background: linear-gradient(rgba(21, 37, 81, 0.48), rgba(21, 37, 81, 0.48)), url('/img/carmtek-oil-and-gas.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 450px;
+  height: 550px;
 
   .bg-text {
     color: #fff;
     align-self: center;
-
-    .btn-base {
-      width: 175px;
-      height: 45px;
-      background-color: var(--base-color);
-      color: #fff;
-      font-size: 16px;
-      font-weight: bold;
-      border: 0px;
+    font-family: $font-campton;
+    h2 {
+      font-family: $font-campton-bold;
     }
   }
 }
@@ -52,19 +75,27 @@ article {
   }
 }
 
+.red-line {
+  background-color: $line-red;
+  width: 44px;
+  border: 2px solid $line-red;
+}
+
 @media (min-width: 1000px) {
   .bg-hero {
     height: 100vh;
 
     h2 {
-      width: 620px;
-      font-size: 51px;
+      width: 778px;
+      font-size: 45px;
     }
     p {
-      width: 350px;
+      width: 445px;
     }
   }
 
 }
 
 @import 'components/header';
+@import 'components/footer';
+@import 'components/home';
