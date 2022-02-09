@@ -1,0 +1,102 @@
+.bg-hero {
+  background: linear-gradient(rgba(14, 30, 67, 0.7), rgba(14, 30, 67, 0.7)), url('/img/carmtek-about-us.png');
+  background-position: center;
+  height: 391px;
+}
+.who-container {
+  // padding: 80px 0px;
+  .row {
+    padding: 15px;
+  }
+  padding-top: 40px;
+  padding-bottom: 40px;
+  .content {
+    h2 {
+      width: 300px;
+      margin-bottom: 10px;
+    }
+  }
+}
+.who-we-are {
+  height: 89vh;
+  padding-top: 50px;
+  .row {
+    padding: 15px;
+  }
+  h2 {
+    padding-top: 20px;
+    font-family: $font-campton-bold;
+    color: $theme-dark;
+  }
+
+  p {
+    color: $theme-gray;
+  }
+}
+
+.about-container {
+  margin-bottom: 70px;
+}
+
+.about-item {
+  height: 45vh;
+  background: url('/img/carmtek-about-3.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.about-item:last-child {
+  height: 56vh;
+  background: $theme-red;
+  display: flex;
+  align-items: center;
+  .red-line {
+    border: 2px solid $white;
+  }
+  p {
+    color: #fff;
+  }
+   h2 {
+      color: #fff;
+      padding-top: 20px;
+    }
+}
+
+@media (min-width: 1000px) {
+  .bg-hero {
+    height: 75vh;
+  }
+  .who-container {
+    .content {
+      h2 {
+        width: 360px;
+      }
+    }
+  }
+  .who-we-are {
+    height: 80vh;
+    .content {
+      margin-top: 10px;
+      p {
+        margin-top: 30px;
+      }
+    }
+  }
+  .who-we-are:last-child {
+    height: 80vh;
+    margin-top: 0px;
+  }
+  .about-item {
+    height: 80vh;
+  }
+  .about-item:last-child {
+    height: 80vh;
+    .content {
+      padding: 30px;
+    }
+  }
+  .who-we-are .content {
+    margin: auto;
+    width: 570px;
+  }
+}

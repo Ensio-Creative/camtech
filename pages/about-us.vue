@@ -2,16 +2,18 @@
   <div>
     <div class="bg-hero">
       <div class="bg-text container">
+        <h4>About us</h4>
         <h2>
-          About us
+          Who we are
         </h2>
       </div>
     </div>
     <section class="container who-container">
-      <div class="row">
-        <div class="col-12 col-lg-6 who-we-are">
+      <div class="row justify-content-center">
+        <div class="col-12 who-we-are">
           <div class="content">
-            <h2>CARMTEK at a glance</h2>
+            <div class="red-line" />
+            <h2>Explore CARMTEK</h2>
             <p>
               We're a leading provider of Cloud Based SCADA and IoT/automation solutions to industrial operations and applications that enable an agile approach to development and innovations that create effective return on investment. We are an end-to-end company with a proven track record in building scalable infrastructure for managing automation devices at massive scale.
             </p>
@@ -20,7 +22,6 @@
             </p>
           </div>
         </div>
-        <div class="col-12 col-lg-6 who-we-are" />
       </div>
     </section>
     <section class="container about-container">
@@ -28,6 +29,7 @@
         <div class="col-12 col-lg-6 about-item order-6 order-sm-2" />
         <div class="col-12 col-lg-6 about-item order-2 order-sm-6">
           <div class="content">
+            <div class="red-line" />
             <h2 class="mb-4">
               Our commitment
             </h2>
@@ -62,104 +64,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss" scoped>
-.bg-hero {
-  background: linear-gradient(rgba(21, 37, 81, 0.48), rgba(21, 37, 81, 0.48)), url('/img/carmtek-about-header-img.jpg');
-  background-position: center;
-  height: 391px;
-}
-.who-container {
-  // padding: 80px 0px;
-  .row {
-    padding: 15px;
-  }
-  padding-top: 40px;
-  padding-bottom: 40px;
-  .content {
-    h2 {
-      width: 300px;
-      margin-bottom: 10px;
-    }
-  }
-}
-.who-we-are {
-  height: 96vh;
-  .row {
-    padding: 15px;
-  }
-  h2 {
-    color: var(--base-color);
-  }
-}
-.who-we-are:last-child {
-  background: url('/img/carmtek-about-2.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 40vh;
-  margin-top: 40px;
-}
-
-.about-container {
-  margin-bottom: 70px;
-}
-
-.about-item {
-  height: 40vh;
-  background: url('/img/carmtek-about-3.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-.about-item:last-child {
-  height: 56vh;
-  background: var(--base-color);
-  display: flex;
-  align-items: center;
-  p {
-    color: #fff;
-  }
-   h2 {
-      color: #fff;
-    }
-}
-
-@media (min-width: 1000px) {
-  .bg-hero {
-    height: 75vh;
-  }
-  .who-container {
-    .content {
-      h2 {
-        width: 360px;
-      }
-    }
-  }
-  .who-we-are {
-    height: 80vh;
-    .content {
-      margin-top: 10px;
-      p {
-        margin-top: 30px;
-      }
-    }
-  }
-  .who-we-are:last-child {
-    height: 80vh;
-    margin-top: 0px;
-  }
-  .about-item {
-    height: 80vh;
-  }
-  .about-item:last-child {
-    height: 80vh;
-    .content {
-      padding: 30px;
-    }
-  }
-  .who-we-are .content {
-    width: 501px;
-  }
-}
-</style>

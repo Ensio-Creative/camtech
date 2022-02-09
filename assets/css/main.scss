@@ -27,7 +27,7 @@ $dark: #000;
 $theme-dark: #0E1E43;
 $line-red: #FF0707;
 $theme-red: #EE3C24;
-$them-gray: #666D80;
+$theme-gray: #666D80;
 
 body {
   font-family: $font-campton;
@@ -99,3 +99,4 @@ article {
 @import 'components/header';
 @import 'components/footer';
 @import 'components/home';
+@import 'components/about';
