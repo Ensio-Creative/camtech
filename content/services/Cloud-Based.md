@@ -11,7 +11,9 @@ Our SCADA Hosting service allows you focus on your core business objectives whil
   * Secure remote client login over web
   * Alarming
   * Sophisticated Trending and Reports
-Our Enterprise Client/Server HMI and SCADA system provides:
+
+##### Our Enterprise Client/Server HMI and SCADA system provides:
+
   * Configuration and viewing over the Internet
   * Powerful historical trending features
   * Powerful alarm callout features such as call-lists and schedules

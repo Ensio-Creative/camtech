@@ -1,0 +1,161 @@
+
+.our-services{
+  background-color: $theme-dark;
+  .our-services-text {
+    color: $white;
+    padding: 40px 0px;
+    text-align: center;
+    .red-line {
+      margin: auto;
+    }
+    h2 {
+      padding-top: 20px;
+      padding-bottom: 10px;
+      font-family: $font-campton-bold;
+    }
+  }
+}
+.service-cards {
+  background-color: var(--base-dark-gray);
+  padding: 40px 0px;
+
+  a{
+    color: #000;
+  }
+  .card {
+    border-radius: 0px;
+    border: 0px;
+    height: 49vh;
+  }
+  .services{
+    background-color: #fff;
+    border-left: 2px solid var(--base-color);
+    margin-bottom: 10px;
+  }
+  .services-thumbnail {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 49vh;
+    display: flex;
+    align-items: flex-end;
+    h5 {
+      color: $white;
+      font-family: $font-campton-bold;
+      padding-left: 20px;
+    }
+  }
+}
+
+// Sub servvices
+.services-description {
+  h5 {
+    color: $theme-dark;
+    font-family: $font-campton-bold;
+  }
+  h4 {
+    color: $theme-dark;
+    font-family: $font-campton-bold;
+  }
+  .container {
+    padding: 20px 10px;
+    article {
+      padding-bottom: 10px;
+      p {
+        color: $theme-gray;
+      }
+    }
+  }
+
+  ul {
+    color: $theme-gray;
+  }
+  .service-img {
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30vh;
+  }
+}
+
+
+  .card {
+    border: 0px;
+  }
+
+  .other-services {
+    padding-bottom: 50px;
+    h2 {
+      color: $theme-dark;
+      text-align: center;
+      font-family: $font-campton-bold;
+    }
+    .other-services-items {
+      .img-thumb {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 60vh;
+      }
+      h5 {
+        font-family: $font-campton-bold;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        color: $theme-dark;
+      }
+    }
+  }
+
+@media (min-width: 1000px) {
+  .our-services {
+    height: 95vh;
+    .our-services-text {
+      padding-top: 120px;
+      width: 865px;
+      margin: auto;
+      p {
+        width: 520px;
+        margin: auto;
+        border-left: 2px solid var(--base-color);
+      }
+    }
+  }
+  .service-cards {
+    position: relative;
+    top: -130px;
+    padding: 0px;
+    .services-thumbnail {
+      h5 {
+        width: 245px;
+      }
+    }
+  }
+  .service-cards .services {
+    margin-bottom: 20px;
+  }
+
+  // Sub services
+
+  .services-description {
+    .container {
+      padding: 88px 0px 10px 0px;
+      background-color: $white;
+
+       article {
+        padding: 0px 90px 0px 90px;
+      }
+    }
+
+    .service-img {
+      margin-top: 75px;
+      height: 60vh;
+    }
+  }
+
+  .other-services {
+    h5 {
+      width: 242px;
+      margin: auto;
+    }
+  }
+}

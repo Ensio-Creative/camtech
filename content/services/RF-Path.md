@@ -11,7 +11,8 @@ Path calculation and testing are used to help design a reliable communication pa
 
 A path profile is a point to point RF analysis to estimate the RF path from site to site. Path profiles are invaluable to determine the viability of a RF path and estimate the antenna height requirements. In addition, the path profile will provide the optimum azimuth angle for antenna pointing.
 A path profile can also help to optimize the height requirements of the antenna, which will translate to cost savings on your project.  In the figure below, we can see that after 80 feet, the impact of additional antenna height is minimal, and the placement of the antenna at a higher elevation would not be significantly beneficial.
-##### Path Study Process
+#### Path Study Process
+
 ##### Area Maps
 Area maps are plotted to show an overview of the study area. These are usually presented as overlays on satellite imagery showing site locations with major roads and terrain.
 ##### Terrain Maps

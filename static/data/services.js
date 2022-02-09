@@ -1,50 +1,50 @@
 export default [
   {
-    id: '355443jjre',
-    imgThumbnail: 'carmtek-maintenance-and-troubleshooting.jpg',
-    headerImg: 'carmtek-maintenance-and-troubleshooting-header-img.jpg',
-    title: 'Maintenance and Troubleshooting'
+    id: 'Cloud-Based',
+    imgThumbnail: 'carmtek-footer-contact.jpg',
+    headerImg: 'carmtek-footer-contact.jpg',
+    title: 'Cloud Based SCADA Hosting'
   },
   {
-    id: '356543erre',
-    imgThumbnail: 'carmtek-field-installation.jpg',
-    headerImg: 'carmtek-field-installation-header-img.jpg',
-    title: 'Field Installation'
-  },
-  {
-    id: '3565434jre',
-    imgThumbnail: 'carmtek-SCADA-communications-troubleshooting.jpg',
-    headerImg: 'carmtek-SCADA-communications-troubleshooting-header-img.jpg',
-    title: 'SCADA Communications Troubleshooting'
-  },
-  {
-    id: '356543jj',
-    imgThumbnail: 'carmtek-systems-and-communications-design.jpg',
-    headerImg: 'carmtek-systems-and-communications-design-header-img.jpg',
-    title: 'Systems and Communication Design'
-  },
-  {
-    id: '356543oore',
+    id: 'RTU-EFM',
     imgThumbnail: 'carmtek-RTU-EFM-programming-and-configuration.jpg',
     headerImg: 'carmtek-RTU-EFM-programming-and-configuration-header-img.jpg',
     title: 'RTU/EFM Programming and Configuration'
   },
   {
-    id: '356543jjew',
-    imgThumbnail: 'carmtek-SCADA-hosting.jpg',
-    headerImg: 'carmtek-SCADA-hosting-header-img.jpg',
-    title: 'Cloud Based SCADA Hosting'
+    id: 'Systems',
+    imgThumbnail: 'carmtek-system-communication-design.jpg',
+    headerImg: 'carmtek-system-communication-design-header-img.jpg',
+    title: 'Systems and communication Design'
   },
   {
-    id: '456543jjre',
+    id: 'CARMTEK-Satellite',
+    imgThumbnail: 'carmtek-cloud-based-SCADA-and-RTU-solutions.jpg',
+    headerImg: 'carmtek-cloud-based-SCADA-and-RTU-solutions-header-img.jpg',
+    title: 'CARMTEK Satellite Airtime Provisioning'
+  },
+  {
+    id: 'RF-Path',
     imgThumbnail: 'carmtek-RF-path-study.jpg',
     headerImg: 'carmtek-RF-path-study-header-img.jpg',
     title: 'RF Path Study/Analysis'
   },
   {
-    id: '356343jjre',
-    imgThumbnail: 'carmtek-satellite-airtime-provisioning.jpg',
-    headerImg: 'carmtek-satellite-airtime-provisioning-header-img.jpg',
-    title: 'CARMTEK Satellite Airtime Provisioning'
+    id: 'Field-Installation',
+    imgThumbnail: 'carmtek-field-installation.jpg',
+    headerImg: 'carmtek-field-installation-header-img.jpg',
+    title: 'Field Installation'
+  },
+  {
+    id: 'SCADA-Communications',
+    imgThumbnail: 'carmtek-scada-communication-troubleshooting.jpg',
+    headerImg: 'carmtek-scada-communication-troubleshooting-header-img.jpg',
+    title: 'SCADA Communications Troubleshooting'
+  },
+  {
+    id: 'maintainance',
+    imgThumbnail: 'carmtek-maintaince.png',
+    headerImg: 'carmtek-maintaince-header-img.jpg',
+    title: 'Maintenance and Troubleshooting'
   }
 ]

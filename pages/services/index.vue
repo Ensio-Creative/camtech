@@ -2,6 +2,7 @@
   <div>
     <div class="bg-hero">
       <div class="bg-text container">
+        <h4>Our Services</h4>
         <h2>
           Cloud Based SCADA/IoT Services
         </h2>
@@ -9,10 +10,14 @@
     </div>
 
     <section class="our-services">
-      <div class="container our-service-text">
-        <p>
-          We provide Cloud Based SCADA (Supervisory Control and Data Acquisition) communication technology services for remote control, monitor, store and display accross different sectors which include Oil & Gas, Power Generation and Distribution, Mining, Manufacturing and Water Systems. With years of experience in industrial automation and our team of experienced engineers, we provide top notch services with best of industry standards.
-        </p>
+      <div class="container ">
+        <div class="our-services-text">
+          <div class="red-line" />
+          <h2>Our Services</h2>
+          <p>
+            We provide Cloud Based SCADA (Supervisory Control and Data Acquisition) communication technology services for remote control, monitor, store and display accross different sectors which include Oil & Gas, Power Generation and Distribution, Mining, Manufacturing and Water Systems. With years of experience in industrial automation and our team of experienced engineers, we provide top notch services with best of industry standards.
+          </p>
+        </div>
       </div>
     </section>
     <section class="service-cards">
@@ -25,8 +30,7 @@
             class="col my-3"
           >
             <div class="card">
-              <div class="services-thumbnail" :style="{backgroundImage:'url(' + `/img/${service.imgThumbnail}` + ')'}" />
-              <div class="card-body">
+              <div class="services-thumbnail" :style="{backgroundImage:'linear-gradient(90deg, rgba(14, 30, 67, 0.89) 0%, rgba(228, 229, 230, 0.13) 72.92%), url(' + `/img/${service.imgThumbnail}` + ')'}">
                 <h5 class="card-title">
                   {{ service.title }}
                 </h5>
@@ -68,69 +72,21 @@ export default {
 
 <style lang="scss" scoped>
 .bg-hero {
-  background: linear-gradient(rgba(21, 37, 81, 0.48), rgba(21, 37, 81, 0.48)), url('/img/carmtek-services-header-img.jpg');
+  background: linear-gradient(rgba(14, 30, 67, 0.7), rgba(14, 30, 67, 0.7)), url('/img/carmtek-industrial-SCADA-telemetry-IoT-solutions-header-img.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   height: 391px;
   background-position: top;
 }
-.our-services{
-  color: #000;
-  background-color: #fff;
-  padding: 40px 0px;
-  text-align: left;
-}
-.service-cards {
-  background-color: var(--base-dark-gray);
-  padding: 40px 0px;
-
-  a{
-    color: #000;
-  }
-  .card {
-    border-radius: 0px;
-    border: 0px;
-    height: 49vh;
-  }
-  .card-body{
-    height: 145px;
-    display: flex;
-    padding: 21px;
-    h5 {
-      align-self: center;
-      font-family: var(--header-font);
-    }
-  }
-  .services{
-    background-color: #fff;
-    border-left: 2px solid var(--base-color);
-    margin-bottom: 10px;
-  }
-  .services-thumbnail {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 100px;
-    height: 40vh;
-  }
-}
-
 @media (min-width: 1000px) {
   .bg-hero {
     height: 79vh;
-  }
-  .our-services {
-    padding: 112px 0px;
-    p {
-      width: 865px;
-      margin: auto;
-      padding-left: 65px;
-      border-left: 2px solid var(--base-color);
+    .bg-text {
+      h2 {
+        width: 550px;
+      }
     }
-  }
-  .service-cards {
-    padding: 100px 0px;
-  }
-  .service-cards .services {
-    margin-bottom: 20px;
   }
 }
 </style>

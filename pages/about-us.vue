@@ -64,3 +64,20 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+.bg-hero {
+  background: linear-gradient(rgba(14, 30, 67, 0.7), rgba(14, 30, 67, 0.7)), url('/img/carmtek-about-us.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 391px;
+}
+
+@media (min-width: 1000px) {
+  .bg-hero {
+    height: 75vh;
+  }
+}
+</style>
