@@ -24,7 +24,7 @@
         </div>
       </div>
     </section>
-    <section class="container about-container">
+    <section class="container-fluid about-container">
       <div class="row">
         <div class="col-12 col-lg-6 about-item order-6 order-sm-2" />
         <div class="col-12 col-lg-6 about-item order-2 order-sm-6">

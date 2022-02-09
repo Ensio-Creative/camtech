@@ -1,0 +1,72 @@
+
+.our-solutions {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  padding-left: 20px;
+  padding-right: 20px;
+  .solution-item {
+    margin-top: 50px;
+    // margin-bottom: 20px;
+    .solution-column {
+      // height: 100px;
+      padding: 0px;
+      .cloud-img {
+        // background: linear-gradient(rgba(21, 37, 81, 0.48), rgba(21, 37, 81, 0.48)), url('/img/carmtek-oil-and-gas.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 200px;
+      }
+
+    }
+    .solution-column:last-child {
+      // height: 600px;
+      display: flex;
+      background-color: #FBFBFB;
+      border: 1px solid $theme-gray;
+      align-items: center;
+      color: $theme-gray;
+      padding: 30px;
+      h2 {
+        color: $theme-dark;
+        font-family: $font-campton-bold;
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+      strong {
+        color: $theme-dark;
+        margin-bottom: 5px;
+      }
+    }
+    // .extra-large {
+    //   height: 700px !important;
+    // }
+    .little-hight {
+      height: 690px !important;
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  .our-solutions {
+    .solution-item {
+      margin-top: 50px;
+      // margin-bottom: 20px;
+      .solution-column {
+        .cloud-img {
+          height: 300px;
+        }
+  
+      }
+      .solution-column:last-child {
+        height: 600px;
+      }
+      .extra-large {
+        height: 700px !important;
+      }
+      .little-hight {
+        height: 370px !important;
+      }
+    }
+  }
+}

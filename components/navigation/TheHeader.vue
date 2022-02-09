@@ -86,7 +86,7 @@ const mappedServices = services.map((service) => {
 
 const mappedSolutions = solutions.map((solution) => {
   const item = {
-    link: `/solutions/${solution.id}`,
+    link: '/solutions',
     title: solution.title
   }
   return item
