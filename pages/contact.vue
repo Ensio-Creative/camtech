@@ -5,16 +5,17 @@
   <div>
     <div class="bg-hero">
       <div class="bg-text container">
+        <h4>Contact us</h4>
         <h2>
-          Contact Us
+          We are here to answer any question you may have
         </h2>
       </div>
     </div>
 
-    <section class="container-fluid">
+    <section class="container contact-text">
       <div class="row justify-content-center full-screen">
-        <div class="col-12 col-md-11">
-          <div class="row contact-info">
+        <div class="col-12 col-md-10">
+          <div class="row contact-form">
             <div class="col-12 form-half">
               <form @submit.prevent="onSubmit">
                 <h2>Get in touch</h2>
@@ -61,51 +62,49 @@
                 </div>
               </form>
             </div>
-            <div class="col-12">
-              <div class="row contact-first-half">
-                <div class="col-12">
-                  <h2>Contacts</h2>
-                </div>
-                <div class="col-12 col-md-6 mt-4">
-                  <h5>PORT HARCOURT</h5>
-                  <p>
-                    Plot 385 Prof. Okujagu Street,
-                    Off Peter Odili Road,
-                    Trans-Amadi Industrial Layout,
-                    Port Harcourt, Nigeria
-                  </p>
-                  <span>
-                    M: +234(0)813.086.0903
-                    <br>
-                    E: info@carmtek.com
-                  </span>
-                </div>
-                <div class="col-12 col-md-6 mt-4">
-                  <h5>LAGOS</h5>
-                  <p>
-                    1B Alh. Hussein Sunmonu St.,
-                    Lekki Phase 1, Lagos
-                  </p>
-                  <span>
-                    M: +234(0)809.090.2689
-                    <br>
-                    E: info@carmtek.com
-                  </span>
-                </div>
-                <div class="col-12 col-md-6 mt-5">
-                  <h5>UNITED KINGDOM</h5>
-                  <p>
-                    10 Malvern Road AYLESBURY, BUCKS HP20 1QF,England
-                  </p>
-                  <span>
-                    M: +44.(0)129.658.6159
-                    <br>
-                    E: uk@carmtek.com
-                  </span>
-                </div>
-              </div>
-            </div>
           </div>
+        </div>
+      </div>
+      <div class="row contact-info">
+        <div class="col-12">
+          <h2>Contact Details</h2>
+        </div>
+        <div class="col-12 col-md-4 mt-4">
+          <h5>PORT HARCOURT</h5>
+          <p>
+            Plot 385 Prof. Okujagu Street,
+            Off Peter Odili Road,
+            Trans-Amadi Industrial Layout,
+            Port Harcourt, Nigeria
+          </p>
+          <span>
+            M: +234(0)813.086.0903
+            <br>
+            E: info@carmtek.com
+          </span>
+        </div>
+        <div class="col-12 col-md-4 mt-4">
+          <h5>LAGOS</h5>
+          <p>
+            1B Alh. Hussein Sunmonu St.,
+            Lekki Phase 1, Lagos
+          </p>
+          <span>
+            M: +234(0)809.090.2689
+            <br>
+            E: info@carmtek.com
+          </span>
+        </div>
+        <div class="col-12 col-md-4 mt-5">
+          <h5>UNITED KINGDOM</h5>
+          <p>
+            10 Malvern Road AYLESBURY, BUCKS HP20 1QF,England
+          </p>
+          <span>
+            M: +44.(0)129.658.6159
+            <br>
+            E: uk@carmtek.com
+          </span>
         </div>
       </div>
     </section>
@@ -170,7 +169,7 @@ export default {
         email: this.email,
         message: this.message
       }
-      const response = await fetch('https://formsubmit.co/ajax/info@gandtconstruction.co.uk', {
+      const response = await fetch('https://formsubmit.co/ajax/info@carmtek.com', {
         method: 'POST', // *GET, POST, PUT, DELETE, etc.
         headers: {
           'Content-Type': 'application/json'
@@ -197,82 +196,13 @@ export default {
 
 <style lang="scss" scoped>
 .bg-hero {
-  background: linear-gradient(rgba(21, 37, 81, 0.48), rgba(21, 37, 81, 0.48)), url('/img/carmtek-contact-header-img.jpg');
+  background: linear-gradient(rgba(14, 30, 67, 0.7), rgba(14, 30, 67, 0.7)), url('/img/carmtek-contact-header-img.jpg');
   height: 391px;
   background-position: center;
-}
-.contact-info {
-  padding: 20px 0px 40px 0px;
-
-  h2 {
-    font-weight: bold;
-    border-bottom: 1px solid #f2f2f2;
-    padding-bottom: 22px;
-    color: var(--base-color);
-  }
-  .contact-first-half{
-    background-color: #fff;
-    padding: 0px;
-    .row {
-      border-top: 2px solid var(--base-text-color);
-    }
-    h4 {
-      padding: 10px 0px 0px 0px;
-    }
-    h5 {
-      font-weight: bold;
-    }
-  }
-  .form-half{
-    background-color:  #fff;
-    form {
-      padding: 10px 0px;
-      color: #000;
-      button{
-        width: 221px;
-        margin: auto;
-      }
-      span {
-        color: var(--base-color);
-      }
-    }
-  }
 }
 @media (min-width: 1000px) {
   .bg-hero {
     height: 79vh;
-  }
-  .container-fluid {
-    height: 168vh;
-  }
-  .full-screen {
-    position: relative;
-    top: -186px;
-  }
-  .contact-info {
-    padding: 0px;
-
-    .form-half{
-      background-color:  #fff;
-      form {
-        padding: 75px 120px;
-        color: #000;
-        button{
-          width: 100%;
-        }
-        span {
-          color: var(--base-color);
-        }
-      }
-    }
-
-    .contact-first-half {
-      padding: 30px 120px;
-
-      p {
-        width: 353px;
-      }
-    }
   }
 }
 </style>

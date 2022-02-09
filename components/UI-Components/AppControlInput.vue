@@ -49,7 +49,7 @@ export default {
   border-left: 0px;
   border-right: 0px;
   border-top: 0px;
-  border-bottom: 1px solid var(--base-dark-gray) !important;
+  border-bottom: 1px solid #C4C4C4 !important;
   border-radius: 0px;
 }
 
