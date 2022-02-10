@@ -34,7 +34,7 @@
 
 .end-end {
   padding-top: 90px;
-  padding-bottom: 90px;
+  padding-bottom: 20px;
   .red-line {
     margin: auto;
   }
@@ -82,7 +82,7 @@
   background: linear-gradient(rgba(21, 37, 81, 0.48), rgba(21, 37, 81, 0.48)), url('/img/carmtek-bg-image.png');
   background-repeat: no-repeat;
   background-size: cover;
-  height: 568px;
+  height: 640px;
   color: $white;
   display: flex;
   align-items: center;
@@ -135,9 +135,9 @@
 
     .solution-link {
       border: 1px solid #989898;
-      padding: 50px;
-      width: 345px;
-      margin-top: 30px;
+      padding: 20px;
+      width: 281px;
+      margin: 15px auto;
       .img-header {
         padding: 120px;
         background-repeat: no-repeat;

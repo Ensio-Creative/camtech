@@ -20,10 +20,10 @@
   background-color: var(--base-dark-gray);
   padding: 40px px;
 
-  .container {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
+  // .container {
+  //   padding-left: 15px;
+  //   padding-right: 15px;
+  // }
 
   a{
     color: #000;
@@ -90,8 +90,8 @@
   }
 
   .other-services {
-    padding-left: 15px;
-    padding-right: 15px;
+    // padding-left: 15px;
+    // padding-right: 15px;
     padding-bottom: 50px;
     h2 {
       color: $theme-dark;
@@ -103,7 +103,7 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        height: 60vh;
+        height: 40vh;
       }
       h5 {
         font-family: $font-campton-bold;
@@ -164,6 +164,11 @@
     h5 {
       width: 242px;
       margin: auto;
+    }
+    .other-services-items {
+      .img-thumb {
+        height: 60vh;
+      }
     }
   }
 }

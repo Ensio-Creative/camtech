@@ -58,7 +58,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 550px;
+  height: 600px;
 
   .bg-text {
     color: #fff;
@@ -66,6 +66,7 @@ body {
     font-family: $font-campton;
     h2 {
       font-family: $font-campton-bold;
+      font-size: 1.7rem;
     }
   }
 }
@@ -75,7 +76,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 550px;
+  height: 600px;
 
   .bg-text {
     color: #fff;
@@ -83,6 +84,7 @@ body {
     font-family: $font-campton;
     h2 {
       font-family: $font-campton-bold;
+      font-size: 1.7rem;
     }
   }
 }
@@ -92,7 +94,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 550px;
+  height: 600px;
 
   .bg-text {
     color: #fff;
@@ -100,6 +102,7 @@ body {
     font-family: $font-campton;
     h2 {
       font-family: $font-campton-bold;
+      font-size: 1.7rem;
     }
   }
 }
@@ -109,7 +112,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 550px;
+  height: 600px;
 
   .bg-text {
     color: #fff;
@@ -117,6 +120,7 @@ body {
     font-family: $font-campton;
     h2 {
       font-family: $font-campton-bold;
+      font-size: 1.7rem;
     }
   }
 }
@@ -145,10 +149,12 @@ article {
   .bg-hero {
     height: 100vh;
 
-    h2 {
+   .bg-text {
+      h2 {
       width: 778px;
       font-size: 45px;
     }
+   }
     p {
       width: 445px;
     }
@@ -156,10 +162,12 @@ article {
   .bg-hero-2 {
     height: 100vh;
 
-    h2 {
+   .bg-text {
+      h2 {
       width: 778px;
       font-size: 45px;
     }
+   }
     p {
       width: 445px;
     }
@@ -167,10 +175,12 @@ article {
   .bg-hero-3 {
     height: 100vh;
 
-    h2 {
+   .bg-text {
+      h2 {
       width: 778px;
       font-size: 45px;
     }
+   }
     p {
       width: 445px;
     }
@@ -178,10 +188,12 @@ article {
   .bg-hero-4 {
     height: 100vh;
 
-    h2 {
+   .bg-text {
+      h2 {
       width: 778px;
       font-size: 45px;
     }
+   }
     p {
       width: 445px;
     }
