@@ -33,6 +33,11 @@ body {
   font-family: $font-campton;
 }
 
+.container {
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
 .btn-base {
   width: 175px;
   height: 45px;
@@ -48,8 +53,59 @@ body {
 }
 
 .bg-hero {
+  background: linear-gradient(rgba(14, 30, 67, 0.7), rgba(14, 30, 67, 0.7)), url('/img/carmtek-oil-and-gas.png');
   display: flex;
-  background: linear-gradient(rgba(21, 37, 81, 0.48), rgba(21, 37, 81, 0.48)), url('/img/carmtek-oil-and-gas.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 550px;
+
+  .bg-text {
+    color: #fff;
+    align-self: center;
+    font-family: $font-campton;
+    h2 {
+      font-family: $font-campton-bold;
+    }
+  }
+}
+.bg-hero-2 {
+  background: linear-gradient(rgba(14, 30, 67, 0.7), rgba(14, 30, 67, 0.7)), url('/img/carmtek-power-generation-and-distribution.png');
+  display: flex;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 550px;
+
+  .bg-text {
+    color: #fff;
+    align-self: center;
+    font-family: $font-campton;
+    h2 {
+      font-family: $font-campton-bold;
+    }
+  }
+}
+.bg-hero-3 {
+  background: linear-gradient(rgba(14, 30, 67, 0.7), rgba(14, 30, 67, 0.7)), url('/img/carmtek-mining.png');
+  display: flex;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 550px;
+
+  .bg-text {
+    color: #fff;
+    align-self: center;
+    font-family: $font-campton;
+    h2 {
+      font-family: $font-campton-bold;
+    }
+  }
+}
+.bg-hero-4 {
+  background: linear-gradient(rgba(14, 30, 67, 0.7), rgba(14, 30, 67, 0.7)), url('/img/carmtek-manufacturing.png');
+  display: flex;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -82,7 +138,44 @@ article {
 }
 
 @media (min-width: 1000px) {
+  .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
   .bg-hero {
+    height: 100vh;
+
+    h2 {
+      width: 778px;
+      font-size: 45px;
+    }
+    p {
+      width: 445px;
+    }
+  }
+  .bg-hero-2 {
+    height: 100vh;
+
+    h2 {
+      width: 778px;
+      font-size: 45px;
+    }
+    p {
+      width: 445px;
+    }
+  }
+  .bg-hero-3 {
+    height: 100vh;
+
+    h2 {
+      width: 778px;
+      font-size: 45px;
+    }
+    p {
+      width: 445px;
+    }
+  }
+  .bg-hero-4 {
     height: 100vh;
 
     h2 {

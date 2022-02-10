@@ -19,7 +19,7 @@
         </div>
       </div>
       <ul
-        class="menu"
+        class="menu ml-4"
         @click="chanageMobileState"
       >
         <li
@@ -40,7 +40,6 @@
             to="/services"
           >
             OUR SERVICES
-            <img class="nav-link-img" src="/img/nav-arrow-dark.svg" alt="">
           </NuxtLink>
         </li>
         <li
@@ -51,7 +50,6 @@
             to="/solutions"
           >
             SOLUTIONS
-            <img class="nav-link-img" src="/img/nav-arrow-dark.svg" alt="">
           </NuxtLink>
         </li>
         <li

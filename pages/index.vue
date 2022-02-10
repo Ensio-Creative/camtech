@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <div class="bg-hero">
+    <!-- <div class="bg-hero">
       <div class="bg-text container">
         <div class="red-line" />
         <h2>
@@ -19,7 +19,104 @@
           Learn more <img src="/img/arrow-link.svg" alt="">
         </button>
       </div>
-    </div>
+    </div> -->
+
+    <section class="img-slides">
+      <div class="img-container">
+        <VueSlickCarousel
+          v-bind="homeSettings"
+        >
+          <div>
+            <div class="bg-hero">
+              <div class="bg-text container">
+                <div class="red-line" />
+                <h2>
+                  Industrial leader in
+                  Cloud Based SCADA/IoT and
+                  Automation Solutions
+                </h2>
+                <p>
+                  We specializes in end to end remote automation
+                  solutions, servicing the Oil & Gas, Power Generation and Distribution, Mining, Water and Manufacturing sectors.
+                </p>
+                <button
+                  class="btn-base"
+                  @click="$router.push('/solutions')"
+                >
+                  Learn more <img src="/img/arrow-link.svg" alt="">
+                </button>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="bg-hero-2">
+              <div class="bg-text container">
+                <div class="red-line" />
+                <h2>
+                  Industrial leader in
+                  Cloud Based SCADA/IoT and
+                  Automation Solutions
+                </h2>
+                <p>
+                  We specializes in end to end remote automation
+                  solutions, servicing the Oil & Gas, Power Generation and Distribution, Mining, Water and Manufacturing sectors.
+                </p>
+                <button
+                  class="btn-base"
+                  @click="$router.push('/solutions')"
+                >
+                  Learn more <img src="/img/arrow-link.svg" alt="">
+                </button>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="bg-hero-3">
+              <div class="bg-text container">
+                <div class="red-line" />
+                <h2>
+                  Industrial leader in
+                  Cloud Based SCADA/IoT and
+                  Automation Solutions
+                </h2>
+                <p>
+                  We specializes in end to end remote automation
+                  solutions, servicing the Oil & Gas, Power Generation and Distribution, Mining, Water and Manufacturing sectors.
+                </p>
+                <button
+                  class="btn-base"
+                  @click="$router.push('/solutions')"
+                >
+                  Learn more <img src="/img/arrow-link.svg" alt="">
+                </button>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="bg-hero-4">
+              <div class="bg-text container">
+                <div class="red-line" />
+                <h2>
+                  Industrial leader in
+                  Cloud Based SCADA/IoT and
+                  Automation Solutions
+                </h2>
+                <p>
+                  We specializes in end to end remote automation
+                  solutions, servicing the Oil & Gas, Power Generation and Distribution, Mining, Water and Manufacturing sectors.
+                </p>
+                <button
+                  class="btn-base"
+                  @click="$router.push('/solutions')"
+                >
+                  Learn more <img src="/img/arrow-link.svg" alt="">
+                </button>
+              </div>
+            </div>
+          </div>
+        </VueSlickCarousel>
+      </div>
+    </section>
 
     <section class="end-end">
       <div class="container">
@@ -28,6 +125,24 @@
           <h2>End-to-End Cloud Based SCADA/IoT Services</h2>
           <p>We provide an End-to-End Cloud Based SCADA/IoT services with specialized systems that minimize downtime and maximize operation output. </p>
         </div>
+
+        <VueSlickCarousel
+          v-bind="settings"
+        >
+          <div
+            v-for="service in services"
+            :key="service.id"
+            class="other-services"
+          >
+            <NuxtLink
+              :to="`/services/${service.id}`"
+              class="other-services-items"
+            >
+              <div class="img-thumb" :style="{backgroundImage:'linear-gradient(rgba(21, 37, 81, 0.48), rgba(21, 37, 81, 0.48)),   url(' + `/img/${service.imgThumbnail}` + ')'}" />
+              <h5>{{ service.title }}</h5>
+            </NuxtLink>
+          </div>
+        </VueSlickCarousel>
       </div>
     </section>
 
@@ -93,20 +208,70 @@
 </template>
 
 <script>
+import VueSlickCarousel from 'vue-slick-carousel'
 import Footer from '@/components/common/Footer.vue'
 // import Forward from '../components/common/Forward.vue'
 import solutions from '~/static/data/solutions.js'
-
-// import hj from 'cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js'
+import services from '~/static/data/services.js'
+import 'vue-slick-carousel/dist/vue-slick-carousel.css'
+// optional style for arrows & dots
+import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
 
 export default {
   name: 'Home',
-  components: { Footer },
+  components: { Footer, VueSlickCarousel },
   data () {
     return {
       solutions,
+      services,
       open: true,
-      otherSolutions: []
+      otherSolutions: [],
+      homeSettings: {
+        dots: false,
+        dotsClass: 'slick-dots custom-dot-class',
+        edgeFriction: 0.35,
+        infinite: true,
+        autoplay: true,
+        speed: 2000,
+        slidesToShow: 1,
+        slidesToScroll: 1
+      },
+      settings: {
+        dots: false,
+        focusOnSelect: true,
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 3,
+        autoplay: true,
+        speed: 4000,
+        touchThreshold: 5,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3,
+              infinite: true,
+              dots: true
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+              initialSlide: 2
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2
+            }
+          }
+        ]
+      }
     }
   },
   mounted () {
