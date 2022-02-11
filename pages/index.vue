@@ -23,92 +23,41 @@
 
     <section class="img-slides">
       <div class="img-container">
+        <div class="bg-text">
+          <div class="container">
+            <h2>
+              Industrial leader in
+              Cloud Based SCADA/IoT and
+              Automation Solutions
+            </h2>
+            <p>
+              We specializes in end to end remote automation
+              solutions, servicing the Oil & Gas, Power Generation and Distribution, Mining, Water and Manufacturing sectors.
+            </p>
+            <button
+              class="btn-base"
+              @click="$router.push('/solutions')"
+            >
+              Learn more <img src="/img/arrow-link.svg" alt="">
+            </button>
+          </div>
+        </div>
         <VueSlickCarousel
           v-bind="homeSettings"
         >
           <div>
-            <div class="bg-hero">
-              <div class="bg-text container">
-                <h2>
-                  Industrial leader in
-                  Cloud Based SCADA/IoT and
-                  Automation Solutions
-                </h2>
-                <p>
-                  We specializes in end to end remote automation
-                  solutions, servicing the Oil & Gas, Power Generation and Distribution, Mining, Water and Manufacturing sectors.
-                </p>
-                <button
-                  class="btn-base"
-                  @click="$router.push('/solutions')"
-                >
-                  Learn more <img src="/img/arrow-link.svg" alt="">
-                </button>
-              </div>
-            </div>
+            <div class="bg-hero" />
+          </div>
+
+          <div>
+            <div class="bg-hero-2" />
+          </div>
+
+          <div>
+            <div class="bg-hero-3" />
           </div>
           <div>
-            <div class="bg-hero-2">
-              <div class="bg-text container">
-                <h2>
-                  Industrial leader in
-                  Cloud Based SCADA/IoT and
-                  Automation Solutions
-                </h2>
-                <p>
-                  We specializes in end to end remote automation
-                  solutions, servicing the Oil & Gas, Power Generation and Distribution, Mining, Water and Manufacturing sectors.
-                </p>
-                <button
-                  class="btn-base"
-                  @click="$router.push('/solutions')"
-                >
-                  Learn more <img src="/img/arrow-link.svg" alt="">
-                </button>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div class="bg-hero-3">
-              <div class="bg-text container">
-                <h2>
-                  Industrial leader in
-                  Cloud Based SCADA/IoT and
-                  Automation Solutions
-                </h2>
-                <p>
-                  We specializes in end to end remote automation
-                  solutions, servicing the Oil & Gas, Power Generation and Distribution, Mining, Water and Manufacturing sectors.
-                </p>
-                <button
-                  class="btn-base"
-                  @click="$router.push('/solutions')"
-                >
-                  Learn more <img src="/img/arrow-link.svg" alt="">
-                </button>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div class="bg-hero-4">
-              <div class="bg-text container">
-                <h2>
-                  Industrial leader in
-                  Cloud Based SCADA/IoT and
-                  Automation Solutions
-                </h2>
-                <p>
-                  We specializes in end to end remote automation
-                  solutions, servicing the Oil & Gas, Power Generation and Distribution, Mining, Water and Manufacturing sectors.
-                </p>
-                <button
-                  class="btn-base"
-                  @click="$router.push('/solutions')"
-                >
-                  Learn more <img src="/img/arrow-link.svg" alt="">
-                </button>
-              </div>
-            </div>
+            <div class="bg-hero-4" />
           </div>
         </VueSlickCarousel>
       </div>
@@ -226,12 +175,13 @@ export default {
       open: true,
       otherSolutions: [],
       homeSettings: {
+        fade: true,
         dots: false,
         dotsClass: 'slick-dots custom-dot-class',
         edgeFriction: 0.35,
         infinite: true,
         autoplay: true,
-        speed: 2000,
+        speed: 4000,
         slidesToShow: 1,
         slidesToScroll: 1
       },

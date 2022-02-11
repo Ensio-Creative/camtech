@@ -198,7 +198,7 @@ export default {
 .bg-hero {
   background: linear-gradient(rgba(14, 30, 67, 0.7), rgba(14, 30, 67, 0.7)), url('/img/carmtek-contact-header-img.jpg');
   height: 391px;
-  background-position: center;
+  background-position: right;
 }
 @media (min-width: 1000px) {
   .bg-hero {

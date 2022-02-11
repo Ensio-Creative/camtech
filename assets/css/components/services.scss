@@ -3,11 +3,7 @@
   background-color: $theme-dark;
   .our-services-text {
     color: $white;
-    padding: 40px 0px 0px 0px;
-    text-align: center;
-    .red-line {
-      margin: auto;
-    }
+    padding: 40px 0px 10px 0px;
     h2 {
       padding-top: 10px;
       padding-bottom: 10px;
@@ -17,7 +13,6 @@
 }
 
 .service-cards {
-  padding: 40px;
 
   a{
     color: #000;
@@ -113,8 +108,12 @@
     height: 85vh;
     .our-services-text {
       padding-top: 120px;
+      text-align: center;
       width: 865px;
       margin: auto;
+      .red-line {
+        margin: auto;
+      }
       p {
         width: 602px;
         margin: auto;

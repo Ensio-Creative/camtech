@@ -51,13 +51,23 @@ body {
     padding-left: 10px;
   }
 }
-.bg-text {
-  color: #fff;
-  align-self: center;
-  font-family: $font-campton;
-  h2 {
-    font-family: $font-campton-bold;
-    font-size: 1.7rem;
+.img-container {
+  .bg-text {
+    position: absolute;
+    z-index: 1;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    align-self: center;
+    font-family: $font-campton;
+    h2 {
+      font-family: $font-campton-bold;
+      font-size: 1.7rem;
+    }
+    button {
+      margin-top: 20px;
+    }
   }
 }
 .bg-hero {
@@ -67,6 +77,15 @@ body {
   background-size: cover;
   background-position: center;
   height: 600px;
+  .bg-text {
+    color: #fff;
+    align-self: center;
+    font-family: $font-campton;
+    h2 {
+      font-family: $font-campton-bold;
+      font-size: 1.7rem;
+    }
+  }
 }
 .bg-hero-2 {
   background: linear-gradient(rgba(14, 30, 67, 0.7), rgba(14, 30, 67, 0.7)), url('/img/carmtek-power-generation-and-distribution.png');
@@ -116,29 +135,45 @@ article {
   }
   .bg-hero {
     height: 100vh;
+    .bg-text {
+      margin-top: 40px;
+      h2 {
+        width: 778px;
+        font-size: 45px;
+      }
+      p {
+        width: 445px;
+      }
+      button {
+        margin-top: 20px;
+      }
   }
+ }
+
+ .bg-hero-2 {
+   height: 100vh;
+ }
+ .bg-hero-3 {
+   height: 100vh;
+ }
+ .bg-hero-4 {
+   height: 100vh;
+ }
+ .img-container {
   .bg-text {
-    margin-top: 40px;
+    .container {
+      padding-left: 120px;
+      width: 900px;
+    }
     h2 {
-      width: 778px;
+      font-family: $font-campton-bold;
       font-size: 45px;
     }
     p {
       width: 445px;
     }
-    button {
-      margin-top: 20px;
-    }
- }
-  .bg-hero-2 {
-    height: 100vh;
   }
-  .bg-hero-3 {
-    height: 100vh;
-  }
-  .bg-hero-4 {
-    height: 100vh;
-  }
+}
 
 }
 

@@ -35,9 +35,6 @@
 .end-end {
   padding-top: 90px;
   padding-bottom: 20px;
-  .red-line {
-    margin: auto;
-  }
   .end-text {
     margin: auto;
     h2 {
@@ -48,7 +45,6 @@
     }
     p {
       color: $theme-gray;
-      text-align: center;
     }
   }
   .btn-container {
@@ -88,7 +84,7 @@
   background: linear-gradient(rgba(21, 37, 81, 0.48), rgba(21, 37, 81, 0.48)), url('/img/carmtek-bg-image.png');
   background-repeat: no-repeat;
   background-size: cover;
-  height: 640px;
+  height: 680px;
   color: $white;
   display: flex;
   align-items: center;
@@ -158,6 +154,9 @@
 
 @media (min-width: 1000px) {
   .end-end {
+    .red-line {
+      margin: auto;
+    }
     .end-text {
       h2 {
         width: 751px;
@@ -166,6 +165,7 @@
       p {
         width: 406px;
         margin: auto;
+        text-align: center;
       }
     }
     .services {
