@@ -13,6 +13,8 @@ A path profile is a point to point RF analysis to estimate the RF path from site
 A path profile can also help to optimize the height requirements of the antenna, which will translate to cost savings on your project.  In the figure below, we can see that after 80 feet, the impact of additional antenna height is minimal, and the placement of the antenna at a higher elevation would not be significantly beneficial.
 #### Path Study Process
 
+~
+
 ##### Area Maps
 Area maps are plotted to show an overview of the study area. These are usually presented as overlays on satellite imagery showing site locations with major roads and terrain.
 ##### Terrain Maps

@@ -80,7 +80,7 @@
           <span>
             M: +234(0)813.086.0903
             <br>
-            E: info@carmtek.com
+            E: info@carmteksolutions.com
           </span>
         </div>
         <div class="col-12 col-md-4 mt-4">
@@ -92,10 +92,10 @@
           <span>
             M: +234(0)809.090.2689
             <br>
-            E: info@carmtek.com
+            E: info@carmteksolutions.com
           </span>
         </div>
-        <div class="col-12 col-md-4 mt-5">
+        <div class="col-12 col-md-4 mt-4">
           <h5>UNITED KINGDOM</h5>
           <p>
             10 Malvern Road AYLESBURY, BUCKS HP20 1QF,England
@@ -103,7 +103,7 @@
           <span>
             M: +44.(0)129.658.6159
             <br>
-            E: uk@carmtek.com
+            E: uk@carmteksolutions.com
           </span>
         </div>
       </div>
@@ -169,7 +169,7 @@ export default {
         email: this.email,
         message: this.message
       }
-      const response = await fetch('https://formsubmit.co/ajax/info@carmtek.com', {
+      const response = await fetch('https://formsubmit.co/ajax/info@carmteksolutions.com', {
         method: 'POST', // *GET, POST, PUT, DELETE, etc.
         headers: {
           'Content-Type': 'application/json'

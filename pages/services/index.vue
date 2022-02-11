@@ -13,7 +13,7 @@
       <div class="container ">
         <div class="our-services-text">
           <div class="red-line" />
-          <h2>Our Services</h2>
+          <h2>What we do</h2>
           <p>
             We provide Cloud Based SCADA (Supervisory Control and Data Acquisition) communication technology services for remote control, monitor, store and display accross different sectors which include Oil & Gas, Power Generation and Distribution, Mining, Manufacturing and Water Systems. With years of experience in industrial automation and our team of experienced engineers, we provide top notch services with best of industry standards.
           </p>
@@ -30,7 +30,7 @@
             class="col my-3"
           >
             <div class="card">
-              <div class="services-thumbnail" :style="{backgroundImage:'linear-gradient(90deg, rgba(14, 30, 67, 0.89) 0%, rgba(228, 229, 230, 0.13) 72.92%), url(' + `/img/${service.imgThumbnail}` + ')'}">
+              <div class="services-thumbnail" :style="{backgroundImage:'linear-gradient(360deg, rgba(14, 30, 67, 0.89) 24.94%, rgba(91, 101, 125, 0.617581) 40.39%, rgba(228, 229, 230, 0.13) 68.03%), url(' + `/img/${service.imgThumbnail}` + ')'}">
                 <h5 class="card-title">
                   {{ service.title }}
                 </h5>

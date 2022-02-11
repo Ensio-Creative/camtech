@@ -47,9 +47,9 @@
         </div>
       </div>
     </div>
-    <hr>
     <div class="privacy container">
-      <span class="privacy-item">Copyright &copy; {{ date.getFullYear() }} CARMTEK. All Rights Reserved.</span>
+      <hr>
+      <span class="privacy-item">Copyright &copy; {{ date.getFullYear() }} CARMTEK Solutions. All Rights Reserved.</span>
       <span class="privacy-item">Web Design: <strong> <a href="https://ensiocreative.com" target="_blank"> Ensio Creative</a> </strong></span>
     </div>
   </div>

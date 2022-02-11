@@ -20,17 +20,21 @@
     </section>
 
     <section class="other-services container mt-5">
-      <h2>Other services</h2>
+      <h2>Discover More</h2>
       <div class="row mt-5">
-        <NuxtLink
+        <div
           v-for="service in otherService"
           :key="service.title"
-          :to="`/services/${service.id}`"
-          class="col-12 col-md-4 other-services-items"
+          class="col-12 col-md-4"
         >
-          <div class="img-thumb" :style="{backgroundImage:'linear-gradient(rgba(21, 37, 81, 0.48), rgba(21, 37, 81, 0.48)),   url(' + `/img/${service.imgThumbnail}` + ')'}" />
-          <h5>{{ service.title }}</h5>
-        </NuxtLink>
+          <NuxtLink
+            :to="`/services/${service.id}`"
+            class="other-services-items"
+          >
+            <div class="img-thumb" :style="{backgroundImage:'url(' + `/img/${service.imgThumbnail}` + ')'}" />
+            <h5>{{ service.title }}</h5>
+          </NuxtLink>
+        </div>
       </div>
     </section>
 

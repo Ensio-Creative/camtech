@@ -3,13 +3,13 @@
   background-color: $theme-dark;
   .our-services-text {
     color: $white;
-    padding: 40px 0px;
+    padding: 40px 0px 0px 0px;
     text-align: center;
     .red-line {
       margin: auto;
     }
     h2 {
-      padding-top: 20px;
+      padding-top: 10px;
       padding-bottom: 10px;
       font-family: $font-campton-bold;
     }
@@ -17,13 +17,7 @@
 }
 
 .service-cards {
-  background-color: var(--base-dark-gray);
-  padding: 40px px;
-
-  // .container {
-  //   padding-left: 15px;
-  //   padding-right: 15px;
-  // }
+  padding: 40px;
 
   a{
     color: #000;
@@ -35,7 +29,6 @@
   }
   .services{
     background-color: #fff;
-    border-left: 2px solid var(--base-color);
     margin-bottom: 10px;
   }
   .services-thumbnail {
@@ -57,11 +50,13 @@
 .services-description {
   h5 {
     color: $theme-dark;
-    font-family: $font-campton-bold;
+    font-family: $font-campton;
+    font-weight: 800;
   }
   h4 {
     color: $theme-dark;
-    font-family: $font-campton-bold;
+    font-family: $font-campton;
+    font-weight: 900;
   }
   .container {
     padding: 20px 30px;
@@ -90,8 +85,6 @@
   }
 
   .other-services {
-    // padding-left: 15px;
-    // padding-right: 15px;
     padding-bottom: 50px;
     h2 {
       color: $theme-dark;
@@ -106,23 +99,24 @@
         height: 40vh;
       }
       h5 {
-        font-family: $font-campton-bold;
+        font-family: $font-campton;
         padding-bottom: 20px;
         padding-top: 20px;
         color: $theme-dark;
+        font-weight: 900;
       }
     }
   }
 
 @media (min-width: 1000px) {
   .our-services {
-    height: 95vh;
+    height: 85vh;
     .our-services-text {
       padding-top: 120px;
       width: 865px;
       margin: auto;
       p {
-        width: 520px;
+        width: 602px;
         margin: auto;
         border-left: 2px solid var(--base-color);
       }
@@ -162,7 +156,7 @@
 
   .other-services {
     h5 {
-      width: 242px;
+      width: 293px;
       margin: auto;
     }
     .other-services-items {
