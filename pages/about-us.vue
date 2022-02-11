@@ -9,18 +9,16 @@
       </div>
     </div>
     <section class="container who-container">
-      <div class="row justify-content-center">
-        <div class="col-12 who-we-are">
-          <div class="content">
-            <div class="red-line" />
-            <h2>Explore CARMTEK</h2>
-            <p>
-              We're a leading provider of Cloud Based SCADA and IoT/automation solutions to industrial operations and applications that enable an agile approach to development and innovations that create effective return on investment. We are an end-to-end company with a proven track record in building scalable infrastructure for managing automation devices at massive scale.
-            </p>
-            <p>
-              We help our clients to transform into digital businesses by unlocking the value of their physical assets and remote operations. We are committed to greatly reduce the effort and complexity that companies go through in integrating IoT/automation solutions into their operations.
-            </p>
-          </div>
+      <div class="who-we-are">
+        <div class="content">
+          <div class="red-line" />
+          <h2>Explore CARMTEK</h2>
+          <p>
+            We're a leading provider of Cloud Based SCADA and IoT/automation solutions to industrial operations and applications that enable an agile approach to development and innovations that create effective return on investment. We are an end-to-end company with a proven track record in building scalable infrastructure for managing automation devices at massive scale.
+          </p>
+          <p>
+            We help our clients to transform into digital businesses by unlocking the value of their physical assets and remote operations. We are committed to greatly reduce the effort and complexity that companies go through in integrating IoT/automation solutions into their operations.
+          </p>
         </div>
       </div>
     </section>

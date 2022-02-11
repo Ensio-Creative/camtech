@@ -29,7 +29,6 @@
           <div>
             <div class="bg-hero">
               <div class="bg-text container">
-                <div class="red-line" />
                 <h2>
                   Industrial leader in
                   Cloud Based SCADA/IoT and
@@ -51,7 +50,6 @@
           <div>
             <div class="bg-hero-2">
               <div class="bg-text container">
-                <div class="red-line" />
                 <h2>
                   Industrial leader in
                   Cloud Based SCADA/IoT and
@@ -73,7 +71,6 @@
           <div>
             <div class="bg-hero-3">
               <div class="bg-text container">
-                <div class="red-line" />
                 <h2>
                   Industrial leader in
                   Cloud Based SCADA/IoT and
@@ -95,7 +92,6 @@
           <div>
             <div class="bg-hero-4">
               <div class="bg-text container">
-                <div class="red-line" />
                 <h2>
                   Industrial leader in
                   Cloud Based SCADA/IoT and
@@ -125,24 +121,26 @@
           <h2>End-to-End Cloud Based SCADA/IoT Services</h2>
           <p>We provide an End-to-End Cloud Based SCADA/IoT services with specialized systems that minimize downtime and maximize operation output. </p>
         </div>
-
-        <VueSlickCarousel
-          v-bind="settings"
-        >
-          <div
-            v-for="service in services"
-            :key="service.id"
-            class="other-services"
+      </div>
+      <div class="container-fluid ">
+        <div class="btn-container">
+          <button
+            class="btn-base"
+            @click="$router.push('/services')"
           >
-            <NuxtLink
-              :to="`/services/${service.id}`"
-              class="other-services-items"
-            >
-              <div class="img-thumb" :style="{backgroundImage:'linear-gradient(rgba(21, 37, 81, 0.48), rgba(21, 37, 81, 0.48)),   url(' + `/img/${service.imgThumbnail}` + ')'}" />
-              <h5>{{ service.title }}</h5>
-            </NuxtLink>
+            Learn more <img src="/img/arrow-link-red.svg" alt="">
+          </button>
+        </div>
+        <div class="services">
+          <div
+            v-for="service in otherServices"
+            :key="service.id"
+            class="service-item"
+          >
+            <div class="img-thumb" :style="{backgroundImage:'url(' + `/img/${service.imgThumbnail}` + ')'}" />
+            <p>{{ service.title }}</p>
           </div>
-        </VueSlickCarousel>
+        </div>
       </div>
     </section>
 
@@ -224,6 +222,7 @@ export default {
     return {
       solutions,
       services,
+      otherServices: [],
       open: true,
       otherSolutions: [],
       homeSettings: {
@@ -279,6 +278,7 @@ export default {
   },
   methods: {
     sliceSolutions () {
+      this.otherServices = this.services.slice(0, 5)
       this.otherSolutions = solutions.slice(0, 2)
     }
   }

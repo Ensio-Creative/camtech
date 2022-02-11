@@ -42,7 +42,7 @@
     margin: auto;
     h2 {
       color: $theme-dark;
-      padding-top: 30px;
+      padding-top: 10px;
       padding-bottom: 30px;
       font-family: $font-campton-bold;
     }
@@ -51,30 +51,36 @@
       text-align: center;
     }
   }
-
-  .other-services {
-    margin-top: 50px;
-    width: 90% !important;
-    h2 {
-      color: $theme-dark;
-      text-align: center;
-      font-family: $font-campton-bold;
+  .btn-container {
+    width: 300px;
+    margin: 0px auto 25px auto;
+    display: flex;
+    justify-content: center;
+    .btn-base {
+      background-color: transparent ;
+      border: 0px;
+      outline: none !important;
+      color: $theme-red;
     }
-    .other-services-items {
-      .img-thumb {
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 20vh;
-      }
-      h5 {
-        font-family: $font-campton-bold;
-        padding-bottom: 20px;
-        padding-top: 20px;
-        color: $theme-dark;
-        font-size: 15px;
-      }
+  }
+  .services {
+    margin-top: 20px;
+    display: block;
+    .service-item {
+      width: 100%;
     }
+  }
+  .img-thumb {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 20vh;
+  }
+  p {
+    padding-bottom: 20px;
+    padding-top: 10px;
+    color: $theme-dark;
+    font-size: 15px;
   }
 }
 
@@ -89,8 +95,9 @@
   .container {
     padding-top: 30px;
     h5 {
-      font-family: $font-campton-bold;
-      padding-top: 30px;
+      font-family: $font-campton;
+      font-weight: normal;
+      padding-top: 10px;
       padding-bottom: 30px;
     }
     p {
@@ -107,8 +114,9 @@
   .solution-item {
     h5 {
       color: $theme-dark;
-      font-family: $font-campton-bold;
-      padding-top: 20px;
+      font-family: $font-campton;
+      font-weight: normal;
+      padding-top: 10px;
     }
     h3 {
       padding-top: 15px;
@@ -160,18 +168,22 @@
         margin: auto;
       }
     }
-    .other-services {
-      margin-top: 70px;
-      .other-services-items {
-        .img-thumb {
-          height: 40vh;
-        }
-        h5 {
-          width: 242px;
-          margin: auto;
-          font-size: 1.25rem;
-        }
+    .services {
+      display: flex;
+      margin-bottom: 20px;
+      .service-item {
+        width: 100%;
+        padding: 5px;
+      }
     }
+    .img-thumb {
+      height: 40vh;
+    }
+    p {
+      // width: 242px;
+      margin: auto;
+      font-size: 16px;
+      padding-left: 10px;
     }
   }
 
@@ -216,7 +228,6 @@
       }
   
       .solution-link {
-        padding: 35px;
         width: 345px;
       }
     }

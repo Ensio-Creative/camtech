@@ -1,14 +1,8 @@
 
 .who-container {
-  .col-12 {
-    padding: 0px;
-  }
   // padding: 80px 0px;
-  .row {
-    padding: 15px;
-  }
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   .content {
     h2 {
       width: 300px;
@@ -19,11 +13,8 @@
 .who-we-are {
   height: 90vh;
   padding-top: 50px;
-  .row {
-    padding: 15px;
-  }
   h2 {
-    padding-top: 20px;
+    padding-top: 10px;
     font-family: $font-campton-bold;
     color: $theme-dark;
   }
@@ -33,9 +24,6 @@
   }
 }
 
-// .about-container {
-//   margin-bottom: 70px;
-// }
 
 .about-item {
   height: 45vh;
@@ -52,14 +40,14 @@
   display: flex;
   align-items: center;
   .red-line {
-    border: 2px solid $white;
+    border: 1px solid $white;
   }
   p {
     color: #fff;
   }
    h2 {
       color: #fff;
-      padding-top: 20px;
+      padding-top: 10px;
     }
 }
 
@@ -89,7 +77,7 @@
     padding-right: 15px;
     height: 80vh;
     .content {
-      padding: 30px;
+      padding: 70px;
     }
   }
   .who-we-are .content {
