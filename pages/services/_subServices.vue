@@ -19,7 +19,7 @@
       </div>
     </section>
 
-    <section class="other-services container mt-5">
+    <section class="other-services container">
       <h2>Discover More</h2>
       <div class="row mt-5">
         <div

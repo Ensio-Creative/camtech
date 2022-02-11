@@ -1,6 +1,7 @@
 
 .our-services{
   background-color: $theme-dark;
+  padding-bottom: 30px;
   .our-services-text {
     color: $white;
     padding: 40px 0px 10px 0px;
@@ -13,6 +14,8 @@
 }
 
 .service-cards {
+  padding-top: 40px;
+  padding-bottom: 40px;
 
   a{
     color: #000;
@@ -80,7 +83,10 @@
   }
 
   .other-services {
-    padding-bottom: 50px;
+    padding-bottom: 35px;
+    .our-services-text {
+      padding: 40px 0px 10px 0px;
+    }
     h2 {
       color: $theme-dark;
       text-align: center;
@@ -107,7 +113,7 @@
   .our-services {
     height: 85vh;
     .our-services-text {
-      padding-top: 120px;
+      padding-top: 60px;
       text-align: center;
       width: 865px;
       margin: auto;
@@ -154,6 +160,8 @@
   }
 
   .other-services {
+    margin-top: 52px;
+    padding-bottom: 50px;
     h5 {
       width: 293px;
       margin: auto;

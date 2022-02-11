@@ -55,12 +55,13 @@ body {
   .bg-text {
     position: absolute;
     z-index: 1;
-    height: 100vh;
+    height: 600px;
     display: flex;
     align-items: center;
     color: #fff;
     align-self: center;
     font-family: $font-campton;
+    margin-top: 30px;
     h2 {
       font-family: $font-campton-bold;
       font-size: 1.7rem;
@@ -161,6 +162,7 @@ article {
  }
  .img-container {
   .bg-text {
+    height: 100vh;
     .container {
       padding-left: 120px;
       width: 900px;

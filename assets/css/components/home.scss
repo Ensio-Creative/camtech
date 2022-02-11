@@ -33,14 +33,13 @@
 }
 
 .end-end {
-  padding-top: 90px;
+  padding-top: 52px;
   padding-bottom: 20px;
   .end-text {
     margin: auto;
     h2 {
       color: $theme-dark;
       padding-top: 10px;
-      padding-bottom: 30px;
       font-family: $font-campton-bold;
     }
     p {
@@ -48,10 +47,6 @@
     }
   }
   .btn-container {
-    width: 300px;
-    margin: 0px auto 25px auto;
-    display: flex;
-    justify-content: center;
     .btn-base {
       background-color: transparent ;
       border: 0px;
@@ -104,8 +99,8 @@
 
 .home-solutions {
   background-color: $white;
-  padding-top: 90px;
-  padding-bottom: 90px;
+  padding-top: 52px;
+  padding-bottom: 52px;
   color: $theme-gray;
   .solution-item {
     h5 {
@@ -123,6 +118,7 @@
     }
   }
   .solution-item:last-child {
+    padding-top: 15px;
     a {
       color: $theme-dark;
     }
@@ -138,12 +134,12 @@
     }
 
     .solution-link {
-      border: 1px solid #989898;
-      padding: 20px;
-      width: 281px;
+      border: 1px solid #C4C4C4;
+      padding: 15px;
+      width: 260px;
       margin: 15px auto;
       .img-header {
-        padding: 120px;
+        padding: 107px;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -154,6 +150,7 @@
 
 @media (min-width: 1000px) {
   .end-end {
+    padding-top: 90px;
     .red-line {
       margin: auto;
     }
@@ -167,6 +164,12 @@
         margin: auto;
         text-align: center;
       }
+    }
+    .btn-container {
+      width: 300px;
+      margin: 0px auto 25px auto;
+      display: flex;
+      justify-content: center;
     }
     .services {
       display: flex;
@@ -206,6 +209,8 @@
   }
 
   .home-solutions {
+    padding-bottom: 90px;
+    padding-top: 90px;
     .solution-item {
       h3 {
         width: 400px;
@@ -222,13 +227,14 @@
       }
   
       h6{
-        width: 190px;
+        width: 235px;
         padding-top: 25px;
         padding-bottom: 20px;
       }
   
       .solution-link {
         width: 345px;
+        padding: 30px;
       }
     }
   }

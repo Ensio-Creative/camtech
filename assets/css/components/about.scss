@@ -5,14 +5,12 @@
   padding-bottom: 60px;
   .content {
     h2 {
-      width: 300px;
       margin-bottom: 10px;
     }
   }
 }
 .who-we-are {
-  height: 90vh;
-  padding-top: 50px;
+  height: 100vh;
   h2 {
     padding-top: 10px;
     font-family: $font-campton-bold;
@@ -35,7 +33,7 @@
 .about-item:last-child {
   padding-right: 30px;
   padding-left: 30px;
-  height: 56vh;
+  height: 70vh;
   background: $theme-red;
   display: flex;
   align-items: center;

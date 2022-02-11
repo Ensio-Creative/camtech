@@ -1,11 +1,11 @@
 .contact-text {
-  margin-top: 40px;
-  margin-bottom: 80px;
+  margin-top: 31px;
+  margin-bottom: 52px;
   // padding-right: 15px !important;
   // padding-left: 15px !important;
 }
 .contact-form {
-  padding: 20px 0px 40px 0px;
+  padding: 20px 0px 0x 0px;
 
   h2 {
     padding-bottom: 22px;
@@ -21,15 +21,12 @@
         width: 95%;
         margin: auto;
       }
-      span {
-        color: var(--base-color);
-      }
     }
   }
 }
 
 .contact-info {
-  padding-top: 20px;
+  // padding-top: 20px;
   color: $theme-gray;
   h2 {
     color: $theme-dark;
@@ -61,17 +58,14 @@
         }
       }
     }
-
-    .contact-first-half {
-      padding: 30px 120px;
-
-      p {
-        width: 353px;
-      }
-    }
   }
   .contact-text {
+    margin-top: 40px;
+    margin-bottom: 80px;
     padding-right: 15px !important;
     padding-left: 15px !important;
+  }
+  .contact-form {
+    padding-bottom: 40px;
   }
 }

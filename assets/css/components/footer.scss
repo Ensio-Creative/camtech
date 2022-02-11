@@ -9,9 +9,13 @@
   }
 
   .footer-link {
+    .link-item {
+      text-align: center;
+    }
     .content-social {
       margin-top: 20px;
       display: flex;
+      justify-content: center;
       .social-item {
         width: 46px;
         height: 46px;
@@ -19,7 +23,7 @@
         border-radius: 50%;
         padding: 11px 15px;
         font-size: 19px;
-        margin-right: 10px; 
+        margin-right: 10px;
         a {
           color: $theme-dark;
         }
